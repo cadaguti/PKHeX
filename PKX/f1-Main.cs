@@ -1611,8 +1611,22 @@ if(Label_IsShiny.Visible) {
         }
         private void updateRandomPID(object sender, EventArgs e)
         {
-            TB_PID.Text = PKX.getRandomPID(Util.getIndex(CB_Species), PKX.getGender(Label_Gender.Text)).ToString("X8");
+            int origin = Util.getIndex(CB_GameOrigin);
+            uint PID = PKX.getRandomPID(Util.getIndex(CB_Species), PKX.getGender(Label_Gender.Text), origin, Util.getIndex(CB_Nature));
+            TB_PID.Text = PID.ToString("X8");
             getQuickFiller(dragout);
+            if (origin >= 24)
+                return;
+
+            // Before Gen6, EC and PID are related
+            // Ensure we don't have an illegal newshiny PID.
+            uint SID = Util.ToUInt32(TB_TID.Text);
+            uint TID = Util.ToUInt32(TB_TID.Text);
+            uint XOR = TID ^ SID ^ PID >> 16 ^ PID & 0xFFFF;
+            if (XOR >> 3 == 1) // Illegal
+                updateRandomPID(sender, e); // Get a new PID
+
+            TB_EC.Text = PID.ToString("X8");
         }
         private void updateRandomEC(object sender, EventArgs e)
         {
@@ -2028,8 +2042,9 @@ if(Label_IsShiny.Visible) {
             XOR &= 0xFFFE; XOR |= UID & 1;
 
             // New XOR should be 0 or 1.
-            if (XOR > 16)
-                TB_PID.Text = (((UID ^ XOR) << 16) + LID).ToString("X8");
+            TB_PID.Text = (((UID ^ XOR) << 16) + LID).ToString("X8");
+            if (Util.getIndex(CB_GameOrigin) < 24) // Pre Gen6
+                TB_EC.Text = TB_PID.Text;
 
             setIsShiny();
             getQuickFiller(dragout);
@@ -2057,17 +2072,19 @@ if(Label_IsShiny.Visible) {
 
             setIsShiny();
             getQuickFiller(dragout);
-            updateIVs(null, null);   // If the PID is changed, PID%6 (Characteristic) might be changed. 
+            updateIVs(null, null);   // If the EC is changed, EC%6 (Characteristic) might be changed. 
             TB_PID.Select(60, 0);   // position cursor at end of field
         }
 
         private void validateComboBox(object sender)
         {
-            if (!(sender is ComboBox))
+            ComboBox cb = sender as ComboBox;
+            if (cb == null) 
                 return;
-
-            ComboBox cb = (ComboBox)sender;
+            
             cb.SelectionLength = 0;
+            if (cb.Text == "")
+            { cb.SelectedIndex = 0; return; }
             cb.BackColor = cb.SelectedValue == null ? Color.DarkSalmon : defaultControlWhite;
         }
         private void validateComboBox(object sender, EventArgs e)
@@ -2090,39 +2107,31 @@ if(Label_IsShiny.Visible) {
         }
         private void validateMove(object sender, EventArgs e)
         {
+            validateComboBox(sender);
             if (!fieldsLoaded)
                 return;
 
-            validateComboBox(sender);
-
-            int[] relearnMoves = 
-            {
-                Util.getIndex(CB_RelearnMove1), Util.getIndex(CB_RelearnMove2),
-                Util.getIndex(CB_RelearnMove3), Util.getIndex(CB_RelearnMove4)
-            };
             if (new[] { CB_Move1, CB_Move2, CB_Move3, CB_Move4 }.Contains(sender)) // Move
-            {
                 updatePP(sender, e);
-                int[] moves =
-                {
-                    Util.getIndex(CB_Move1), Util.getIndex(CB_Move2),
-                    Util.getIndex(CB_Move3), Util.getIndex(CB_Move4)
-                };
-                PictureBox[] moveCB = {PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4};
-                bool[] legal = Legality.getMoveValidity(moves, relearnMoves);
-                for (int i = 0; i < 4; i++)
-                    moveCB[i].Visible = !legal[i];
-            }
-            else
+
+            int[] relearnMoves = { Util.getIndex(CB_RelearnMove1), Util.getIndex(CB_RelearnMove2), Util.getIndex(CB_RelearnMove3), Util.getIndex(CB_RelearnMove4) };
+            int[] moves = { Util.getIndex(CB_Move1), Util.getIndex(CB_Move2), Util.getIndex(CB_Move3), Util.getIndex(CB_Move4) };
+
+            // Refresh Relearn if...
+            if (new[] { CB_RelearnMove1, CB_RelearnMove2, CB_RelearnMove3, CB_RelearnMove4 }.Contains(sender))
             {
                 PictureBox[] moveCB = { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
                 bool[] legal = Legality.getRelearnValidity(relearnMoves);
                 for (int i = 0; i < 4; i++)
                     moveCB[i].Visible = !legal[i];
+            }
 
-                // Refresh move states
-                foreach (ComboBox c in new[] { CB_Move1, CB_Move2, CB_Move3, CB_Move4 })
-                    validateMove(c, e);
+            // Refresh Moves
+            {
+                PictureBox[] moveCB = { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
+                bool[] legal = Legality.getMoveValidity(moves, relearnMoves);
+                for (int i = 0; i < 4; i++)
+                    moveCB[i].Visible = !legal[i];
             }
         }
         private void validateLocation(object sender, EventArgs e)
@@ -2146,9 +2155,8 @@ if(Label_IsShiny.Visible) {
 
             Legality = new LegalityAnalysis(pk6);
 
-            // refresh
-            foreach (ComboBox cb in new[] {CB_RelearnMove1, CB_RelearnMove2, CB_RelearnMove3, CB_RelearnMove4})
-                validateMove(cb, null);
+            // Refresh Move Legality
+            validateMove(CB_RelearnMove1, null);
         }
         private void updateStats()
         {

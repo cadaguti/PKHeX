@@ -3,33 +3,8 @@ using System.Linq;
 
 namespace PKHeX
 {
-    public enum Severity
-    {
-        Indeterminate = -2,
-        Invalid = -1,
-        Fishy = 0,
-        Valid = 1,
-        NotImplemented = 2,
-    }
-    public class LegalityCheck
-    {
-        public Severity Judgement = Severity.Invalid;
-        public string Comment;
-        public bool Valid => Judgement >= Severity.Fishy;
-
-        public LegalityCheck() { }
-        public LegalityCheck(Severity s, string c)
-        {
-            Judgement = s;
-            Comment = c;
-        }
-    }
     public class LegalityAnalysis
     {
-        public bool Valid = false;
-        public LegalityCheck EC, Nickname, PID, IDs, IVs, EVs;
-        public string Report => getLegalityReport();
-
         private readonly PK6 pk6;
         public LegalityAnalysis(PK6 pk)
         {
@@ -70,6 +45,14 @@ namespace PKHeX
             if (Moves.Length != 4)
                 return new bool[4];
 
+            bool link = pk6.Met_Location == 30011;
+            if (link)
+            {
+                if (pk6.FatefulEncounter) // Should NOT be Fateful
+                    return new bool[4]; // False
+                int[] moves = Legal.getLinkMoves(pk6);
+                return moves.SequenceEqual(Moves) ? res : new bool[4];
+            }
             bool egg = Legal.EggLocations.Contains(pk6.Egg_Location) && pk6.Met_Level == 1;
             bool evnt = pk6.FatefulEncounter && pk6.Met_Location > 40000;
             bool eventEgg = pk6.FatefulEncounter && (pk6.Egg_Location > 40000 || pk6.Egg_Location == 30002) && pk6.Met_Level == 1;
@@ -120,10 +103,6 @@ namespace PKHeX
             for (int i = 0; i < 4; i++)
                 res[i] = Moves[i] == 0;
             return res;
-        }
-        private string getLegalityReport()
-        {
-            return null;
         }
     }
 }

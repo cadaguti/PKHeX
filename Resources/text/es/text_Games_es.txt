@@ -2,11 +2,11 @@
 Zafiro
 Rubí
 Esmeralda
-RojoFuego
-VerdeHoja
+Rojo Fuego
+Verde Hoja
 
-HeartGold
-SoulSilver
+Oro HeartGold
+Plata SoulSilver
 
 Diamante
 Perla
@@ -18,11 +18,11 @@ Colosseum/XD
 
 
 
-Blanca
-Negra
-Blanca2
-Negra2
+Blanco
+Negro
+Blanco 2
+Negro 2
 X
 Y
-AS
-OR
+Zafiro Alfa
+Rubí Omega

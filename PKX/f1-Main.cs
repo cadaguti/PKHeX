@@ -33,6 +33,7 @@ namespace PKHeX
 
                                     dcpkx1, dcpkx2, gtspkx, fusedpkx,subepkx1,subepkx2,subepkx3,
                                 };
+            SlotCries = new String[49];
             defaultControlWhite = CB_Species.BackColor;
             defaultControlText = Label_Species.ForeColor;
             CB_ExtraBytes.SelectedIndex = 0;
@@ -174,7 +175,9 @@ namespace PKHeX
             };
         private static string origintrack;
         private readonly PictureBox[] SlotPictureBoxes;
-        private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
+        private readonly String[] SlotCries;
+        private readonly SoundPlayer cry = new SoundPlayer();
+                private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
         #endregion
 
         #region //// MAIN MENU FUNCTIONS ////
@@ -1253,6 +1256,11 @@ namespace PKHeX
             // Set the Controls
             BTN_Shinytize.Visible = BTN_Shinytize.Enabled = !isShiny;
             Label_IsShiny.Visible = isShiny;
+if(Label_IsShiny.Visible) {
+            CB_Species.AccessibleDescription = "Shiny";
+} else {
+            CB_Species.AccessibleDescription = "";
+}
 
             // Refresh Markings (for Shiny Star if applicable)
             setMarkings();
@@ -2678,7 +2686,7 @@ namespace PKHeX
             if (slot >= 30 && slot < 36) 
                 setParty();
             else 
-                getQuickFiller(SlotPictureBoxes[slot], pk);
+                getQuickFiller(SlotPictureBoxes[slot], slot, pk);
 
             getSlotColor(slot, Properties.Resources.slotSet);
         }
@@ -2694,6 +2702,7 @@ namespace PKHeX
             else return;
 
             SlotPictureBoxes[slot].Image = null;
+            SlotCries[slot] = null;
             getSlotColor(slot, Properties.Resources.slotDel);
         }
         private void clickClone(object sender, EventArgs e)
@@ -2714,7 +2723,7 @@ namespace PKHeX
             for (int i = 0; i < 30; i++) // write encrypted array to all box slots
             {
                 SAV.setPK6Stored(pk, getPKXOffset(i));
-                getQuickFiller(SlotPictureBoxes[i], pk);
+                getQuickFiller(SlotPictureBoxes[i], i, pk);
             }
         }
         private void updateEggRNGSeed(object sender, EventArgs e)
@@ -2832,10 +2841,10 @@ namespace PKHeX
             // Refresh slots
             for (int i = 0; i < 6; i++)
             {
-                getQuickFiller(SlotPictureBoxes[i + 30], SAV.getPK6Stored(SAV.Party + PK6.SIZE_PARTY*i));
-                getQuickFiller(SlotPictureBoxes[i + 36], SAV.getPK6Stored(SAV.BattleBox + PK6.SIZE_STORED*i));
-            }
+                getQuickFiller(SlotPictureBoxes[i + 30], i+30, SAV.getPK6Stored(SAV.Party + PK6.SIZE_PARTY*i));
+                getQuickFiller(SlotPictureBoxes[i + 36], i+36, SAV.getPK6Stored(SAV.BattleBox + PK6.SIZE_STORED*i));
         }
+    }
         private int getPKXOffset(int slot)
         {
             if (slot < 30)      // Box Slot
@@ -2869,18 +2878,18 @@ namespace PKHeX
                 PAN_Box.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(imagename);
 
                 for (int i = 0; i < 30; i++)
-                    getSlotFiller(boxoffset + PK6.SIZE_STORED * i, SlotPictureBoxes[i]);
+                    getSlotFiller(boxoffset + PK6.SIZE_STORED * i, SlotPictureBoxes[i], i);
             }
 
             // Reload Party
             if (SAV.Party > -1)
             for (int i = 0; i < 6; i++)
-                getSlotFiller(SAV.Party + PK6.SIZE_PARTY * i, SlotPictureBoxes[i + 30]);
+                getSlotFiller(SAV.Party + PK6.SIZE_PARTY * i, SlotPictureBoxes[i + 30], i+30);
 
             // Reload Battle Box
             if (SAV.BattleBox > -1)
             for (int i = 0; i < 6; i++)
-                getSlotFiller(SAV.BattleBox + PK6.SIZE_STORED * i, SlotPictureBoxes[i + 36]);
+                getSlotFiller(SAV.BattleBox + PK6.SIZE_STORED * i, SlotPictureBoxes[i + 36], i+36);
 
             // Reload Daycare
             if (SAV.Daycare > -1)
@@ -2892,7 +2901,7 @@ namespace PKHeX
 
                 for (int i = 0; i < 2; i++)
                 {
-                    getSlotFiller(SAV.DaycareSlot[DaycareSlot] + PK6.SIZE_STORED * i + 8 * (i + 1), SlotPictureBoxes[i + 42]);
+                    getSlotFiller(SAV.DaycareSlot[DaycareSlot] + PK6.SIZE_STORED * i + 8 * (i + 1), SlotPictureBoxes[i + 42], i+42);
                     dctexta[i].Text = exp[i].ToString();
                     if (occ[i])   // If Occupied
                         dclabela[i].Text = $"{i + 1}: ✓";
@@ -2908,11 +2917,11 @@ namespace PKHeX
 
             // GTS
             if (SAV.GTS > -1)
-            getSlotFiller(SAV.GTS, SlotPictureBoxes[44]);
+            getSlotFiller(SAV.GTS, SlotPictureBoxes[44], 44);
 
             // Fused
             if (SAV.Fused > -1)
-            getSlotFiller(SAV.Fused, SlotPictureBoxes[45]);
+            getSlotFiller(SAV.Fused, SlotPictureBoxes[45], 45);
 
             // SUBE
             if (SAV.SUBE > -1)
@@ -2920,7 +2929,7 @@ namespace PKHeX
             {
                 int offset = SAV.SUBE + i * (PK6.SIZE_STORED + 4);
                 if (BitConverter.ToUInt64(SAV.Data, offset) != 0)
-                    getSlotFiller(offset, SlotPictureBoxes[46 + i]);
+                    getSlotFiller(offset, SlotPictureBoxes[46 + i], 46+i);
                 else SlotPictureBoxes[46 + i].Image = null;
             }
 
@@ -2948,20 +2957,21 @@ namespace PKHeX
             }
             CB_BoxSelect.SelectedIndex = selectedbox; // restore selected box
         }
-        private void getQuickFiller(PictureBox pb, PK6 pk = null)
+        private void getQuickFiller(PictureBox pb, int cryIndex = -1, PK6 pk = null)
         {
             if (!fieldsInitialized) return;
             pk = pk ?? preparepkx(false); // don't perform control loss click
 
             if (pb == dragout) L_QR.Visible = pk.Species != 0; // Species
+            else SlotCries[cryIndex] = pk.Species.ToString();
             pb.Image = pk.Sprite;
-        }
-        private void getSlotFiller(int offset, PictureBox pb)
+}
+        private void getSlotFiller(int offset, PictureBox pb, int cryIndex)
         {
             if (SAV.getData(offset, PK6.SIZE_STORED).SequenceEqual(new byte[PK6.SIZE_STORED]))
             {
                 // 00s present in slot.
-                pb.Image = null;
+                pb.Image = null; SlotCries[cryIndex] = "0";
                 pb.BackColor = Color.Transparent;
                 return;
             }
@@ -2969,13 +2979,13 @@ namespace PKHeX
             if (p.Sanity != 0 || !p.ChecksumValid) // Invalid
             {
                 // Bad Egg present in slot.
-                pb.Image = null;
+                pb.Image = null; SlotCries[cryIndex] = "65535";
                 pb.BackColor = Color.Red;
                 return;
             }
             // Something stored in slot. Only display if species is valid.
-            pb.Image = p.Species == 0 ? null : p.Sprite;
-            pb.BackColor = Color.Transparent;
+            pb.Image = p.Species == 0 ? null : p.Sprite; SlotCries[cryIndex] = p.Species.ToString();
+        pb.BackColor = Color.Transparent;
         }
         private void getSlotColor(int slot, Image color)
         {
@@ -3309,6 +3319,16 @@ namespace PKHeX
         }
 
         // Drag & Drop within Box
+        private void pbBoxSlot_MouseHover(object sender, System.EventArgs e)
+        {
+            int index = getSlot(sender);
+            cry.SoundLocation = @"cries\" + SlotCries[index] + ".wav";
+            cry.Play();
+        }
+        private void pbBoxSlot_MouseLeave(object sender, System.EventArgs e)
+        {
+            cry.Stop();
+        }
         private void pbBoxSlot_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left || e.Clicks != 1) return;
@@ -3385,7 +3405,7 @@ namespace PKHeX
                         else
                         {
                             SAV.setEK6Stored(data, offset);
-                            getQuickFiller(SlotPictureBoxes[slot], new PK6(decdata));
+                            getQuickFiller(SlotPictureBoxes[slot], slot, new PK6(decdata));
                             getSlotColor(slot, Properties.Resources.slotSet);
                         }
                     }
@@ -3398,7 +3418,7 @@ namespace PKHeX
                 if (ModifierKeys == Keys.Alt && slot > -1) // overwrite delete old slot
                 {
                     // Clear from slot picture
-                    getQuickFiller(SlotPictureBoxes[pkm_from_slot], new PK6());
+                    getQuickFiller(SlotPictureBoxes[pkm_from_slot], pkm_from_slot, new PK6());
 
                     // Clear from slot data
                     SAV.setEK6Stored(blankEK6, pkm_from_offset);
@@ -3409,14 +3429,14 @@ namespace PKHeX
                     PK6 pk = SAV.getPK6Stored(offset);
 
                     // Swap slot picture
-                    getQuickFiller(SlotPictureBoxes[pkm_from_slot], pk);
+                    getQuickFiller(SlotPictureBoxes[pkm_from_slot], pkm_from_slot, pk);
 
                     // Swap slot data to source
                     SAV.setPK6Stored(pk, pkm_from_offset);
                 }
                 // Copy from temp slot to new.
                 SAV.setEK6Stored(pkm_from, offset);
-                getQuickFiller(SlotPictureBoxes[slot], new PK6(PKX.decryptArray(pkm_from)));
+                getQuickFiller(SlotPictureBoxes[slot], slot, new PK6(PKX.decryptArray(pkm_from)));
 
                 pkm_from_offset = 0; // Clear offset value
             }

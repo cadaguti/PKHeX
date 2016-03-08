@@ -2710,7 +2710,7 @@ if(Label_IsShiny.Visible) {
             else return;
 
             SlotPictureBoxes[slot].Image = null;
-            SlotCries[slot] = null;
+            SlotCries[slot] = "0";
             getSlotColor(slot, Properties.Resources.slotDel);
         }
         private void clickClone(object sender, EventArgs e)
@@ -3331,7 +3331,7 @@ if(Label_IsShiny.Visible) {
         {
             int index = getSlot(sender);
             cry.SoundLocation = @"cries\" + SlotCries[index] + ".wav";
-            cry.Play();
+                                                                        cry.Play();
         }
         private void pbBoxSlot_MouseLeave(object sender, System.EventArgs e)
         {

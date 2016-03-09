@@ -1618,7 +1618,7 @@ if(Label_IsShiny.Visible) {
         private void updateRandomPID(object sender, EventArgs e)
         {
             int origin = Util.getIndex(CB_GameOrigin);
-            uint PID = PKX.getRandomPID(Util.getIndex(CB_Species), PKX.getGender(Label_Gender.Text), origin, Util.getIndex(CB_Nature));
+            uint PID = PKX.getRandomPID(Util.getIndex(CB_Species), PKX.getGender(Label_Gender.Text), origin, Util.getIndex(CB_Nature), CB_Form.SelectedIndex);
             TB_PID.Text = PID.ToString("X8");
             getQuickFiller(dragout);
             if (origin >= 24)
@@ -2154,6 +2154,11 @@ if(Label_IsShiny.Visible) {
         {
             ((ComboBox)sender).DroppedDown = false;
         }
+        private void showLegality(PK6 pk)
+        {
+            LegalityAnalysis la = new LegalityAnalysis(pk);
+            Util.Alert(la.Report); // temp
+        }
         private void updateLegality()
         {
             if (!fieldsLoaded)
@@ -2506,26 +2511,26 @@ if(Label_IsShiny.Visible) {
         // Decrypted Export
         private void dragout_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!verifiedPKX()) return;
-            {
-                // Create Temp File to Drag
-                Cursor.Current = Cursors.Hand;
+            if (e.Button == MouseButtons.Right)
+                return;
+            if (!verifiedPKX())
+                return;
 
-                // Make a new file name
-                PK6 pkx = preparepkx();
-                string filename = Path.GetFileNameWithoutExtension(pkx.FileName) + (e.Button == MouseButtons.Right ? ".ek6" : ".pk6");
-                byte[] dragdata = e.Button == MouseButtons.Right ? pkx.EncryptedBoxData : pkx.DecryptedBoxData;
-                // Make file
-                string newfile = Path.Combine(Path.GetTempPath(), Util.CleanFileName(filename));
-                try
-                {
-                    File.WriteAllBytes(newfile, dragdata);
-                    DoDragDrop(new DataObject(DataFormats.FileDrop, new[] { newfile }), DragDropEffects.Move);
-                }
-                catch (Exception x)
-                { Util.Error("Drag & Drop Error", x.ToString()); }
-                File.Delete(newfile);
+            // Create Temp File to Drag
+            PK6 pkx = preparepkx();
+            bool encrypt = ModifierKeys == Keys.Control;
+            string filename = $"{Path.GetFileNameWithoutExtension(pkx.FileName)}{(encrypt ? ".ek6" : ".pk6")}";
+            byte[] dragdata = encrypt ? pkx.EncryptedBoxData : pkx.DecryptedBoxData;
+            // Make file
+            string newfile = Path.Combine(Path.GetTempPath(), Util.CleanFileName(filename));
+            try
+            {
+                File.WriteAllBytes(newfile, dragdata);
+                DoDragDrop(new DataObject(DataFormats.FileDrop, new[] { newfile }), DragDropEffects.Move);
             }
+            catch (Exception x)
+            { Util.Error("Drag & Drop Error", x.ToString()); }
+            File.Delete(newfile);
         }
         private void dragout_DragOver(object sender, DragEventArgs e)
         {
@@ -2739,6 +2744,22 @@ if(Label_IsShiny.Visible) {
                 SAV.setPK6Stored(pk, getPKXOffset(i));
                 getQuickFiller(SlotPictureBoxes[i], i, pk);
             }
+        }
+        private void clickLegality(object sender, EventArgs e)
+        {
+            int slot = getSlot(sender);
+            PK6 pk;
+            if (slot >= 0)
+                pk = SAV.getPK6Stored(getPKXOffset(slot));
+            else if (verifiedPKX())
+                pk = preparepkx();
+            else
+                return;
+
+            if (pk.Species == 0 || !pk.ChecksumValid)
+            { SystemSounds.Asterisk.Play(); return; }
+
+            showLegality(pk);
         }
         private void updateEggRNGSeed(object sender, EventArgs e)
         {

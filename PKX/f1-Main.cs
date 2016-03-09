@@ -33,7 +33,10 @@ namespace PKHeX
 
                                     dcpkx1, dcpkx2, gtspkx, fusedpkx,subepkx1,subepkx2,subepkx3,
                                 };
+            criesPath = "cries\\";
+            criesExtension = ".mp3";
             SlotCries = new String[49];
+            criesAreExternal = ExistExternalCries();
             defaultControlWhite = CB_Species.BackColor;
             defaultControlText = Label_Species.ForeColor;
             CB_ExtraBytes.SelectedIndex = 0;
@@ -176,7 +179,10 @@ namespace PKHeX
         private static string origintrack;
         private readonly PictureBox[] SlotPictureBoxes;
         private readonly String[] SlotCries;
-        private readonly SoundPlayer cry = new SoundPlayer();
+        private static bool criesAreExternal;
+        private static string criesPath;
+        private static string criesExtension;
+        private readonly MP3Player cry = new MP3Player();
                 private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
         #endregion
 
@@ -3330,12 +3336,11 @@ if(Label_IsShiny.Visible) {
         private void pbBoxSlot_MouseHover(object sender, System.EventArgs e)
         {
             int index = getSlot(sender);
-            cry.SoundLocation = @"cries\" + SlotCries[index] + ".wav";
-                                                                        cry.Play();
+            PlayCry(index);
         }
         private void pbBoxSlot_MouseLeave(object sender, System.EventArgs e)
         {
-            cry.Stop();
+            StopCry();
         }
         private void pbBoxSlot_MouseDown(object sender, MouseEventArgs e)
         {
@@ -3461,6 +3466,44 @@ if(Label_IsShiny.Visible) {
         private byte[] pkm_from = (byte[])blankEK6.Clone();
         private int pkm_from_offset;
         private int pkm_from_slot = -1;
+        #endregion
+
+        #region Accessibility
+        internal static bool ExistExternalCries()
+        {
+            bool exists = false;
+            if (Directory.Exists(criesPath))
+            {
+for(int i=0;i<722;i++) {
+if(!File.Exists(criesPath+i.ToString()+criesExtension)) {
+                        return false;
+                    }
+                }
+                for (int i = 65535; i < 65536; i++)
+                {
+                    if (!File.Exists(criesPath + i.ToString() + criesExtension))
+                    {
+                        return false;
+                    }
+                }
+                exists = true;
+            }
+            return exists;
+        }
+        void PlayCry(int index) {
+            if (criesAreExternal)
+            {
+                cry.Open(criesPath + SlotCries[index] + criesExtension);
+            }
+            else {
+                cry.Open((Byte[])Properties.Resources.ResourceManager.GetObject("C"+SlotCries[index].ToString()));
+            }
+            cry.Play();
+        }
+        void StopCry()
+        {
+            cry.Close();
+        }
         #endregion
     }
 }

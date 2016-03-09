@@ -5776,4 +5776,2350 @@
   <data name="wc6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\byte\wc6.pkl;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="C0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C0.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C10.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C100.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C101.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C102.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C103.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C104.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C105.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C106.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C107.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C108.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C109.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C11.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C110.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C111.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C112.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C113.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C114.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C115.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C115_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C115-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C116.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C117.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C118.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C119.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C12.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C120.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C121.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C122.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C123.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C124.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C125.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C126.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C127.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C127_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C127-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C128.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C129.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C13.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C130.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C130_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C130-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C131.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C132.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C133.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C134.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C135.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C136.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C137.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C138.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C139.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C14.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C140.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C141.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C142.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C142_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C142-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C143.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C144.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C145.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C146.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C147.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C148.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C149.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C15.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C150.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C150_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C150-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C150_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C150-2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C151.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C152.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C153.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C154.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C155.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C156.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C157.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C158.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C159.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C15_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C15-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C16.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C160.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C161.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C162.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C163.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C164.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C165.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C166.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C167.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C168.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C169.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C17.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C170.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C171.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C172.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C173.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C174.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C175.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C176.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C177.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C178.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C179.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C18.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C180.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C181.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C181_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C181-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C182.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C183.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C184.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C185.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C186.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C187.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C188.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C189.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C18_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C18-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C19.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C190.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C191.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C192.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C193.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C194.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C195.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C196.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C197.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C198.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C199.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C20.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C200.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C201.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C202.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C203.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C204.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C205.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C206.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C207.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C208.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C208_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C208-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C209.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C21.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C210.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C211.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C212.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C212_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C212-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C213.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C214.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C214_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C214-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C215.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C216.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C217.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C218.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C219.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C22.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C220.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C221.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C222.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C223.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C224.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C225.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C226.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C227.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C228.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C229.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C229_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C229-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C23.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C230.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C231.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C232.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C233" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C233.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C234.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C235.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C236.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C237" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C237.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C238" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C238.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C239" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C239.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C24.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C240.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C241.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C242.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C243.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C244.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C245.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C246" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C246.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C247" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C247.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C248.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C248_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C248-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C249" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C249.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C25.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C250" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C250.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C251.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C252.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C253.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C254.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C254_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C254-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C255.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C256.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C257" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C257.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C257_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C257-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C258" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C258.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C259" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C259.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C26.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C260" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C260.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C260_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C260-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C261.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C262" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C262.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C263.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C264.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C265.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C266" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C266.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C267" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C267.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C268" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C268.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C269" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C269.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C27.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C270.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C271.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C272.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C273.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C274" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C274.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C275.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C276.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C277" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C277.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C278" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C278.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C279" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C279.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C28.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C280.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C281.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C282.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C282_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C282-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C283" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C283.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C284" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C284.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C285" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C285.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C286" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C286.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C287" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C287.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C288.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C289.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C29.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C290.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C291.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C292.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C293" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C293.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C294.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C295.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C296.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C297.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C298" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C298.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C299.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C3.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C30.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C300.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C301.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C302" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C302.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C302_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C302-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C303.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C303_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C303-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C304" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C304.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C305" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C305.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C306" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C306.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C306_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C306-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C307.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C308" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C308.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C308_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C308-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C309" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C309.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C31.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C310.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C310_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C310-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C311.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C312.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C313.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C314" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C314.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C315" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C315.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C316" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C316.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C317.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C318" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C318.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C319" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C319.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C319_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C319-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C32.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C320.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C321.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C322.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C323.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C323_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C323-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C324.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C325.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C326.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C327" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C327.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C328" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C328.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C329" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C329.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C33.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C330.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C331.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C332" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C332.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C333" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C333.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C334" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C334.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C334_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C334-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C335" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C335.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C336.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C337.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C338" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C338.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C339" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C339.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C34.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C340" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C340.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C341" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C341.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C342" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C342.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C343.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C344" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C344.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C345" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C345.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C346" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C346.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C347" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C347.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C348" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C348.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C349" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C349.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C35.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C350.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C351.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C352" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C352.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C353" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C353.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C354" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C354.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C354_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C354-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C355" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C355.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C356" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C356.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C357" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C357.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C358" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C358.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C359" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C359.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C359_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C359-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C36.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C360" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C360.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C361.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C362" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C362.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C362_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C362-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C363" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C363.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C364" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C364.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C365" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C365.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C366" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C366.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C367" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C367.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C368" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C368.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C369" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C369.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C37.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C370" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C370.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C371" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C371.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C372" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C372.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C373" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C373.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C373_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C373-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C374" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C374.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C375" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C375.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C376" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C376.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C376_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C376-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C377.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C378" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C378.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C379" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C379.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C38.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C380" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C380.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C380_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C380-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C381" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C381.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C381_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C381-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C382" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C382.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C382_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C382-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C383" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C383.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C383_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C383-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C384" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C384.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C384_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C384-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C385" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C385.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C386.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C387" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C387.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C388" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C388.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C389" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C389.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C39.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C390" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C390.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C391" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C391.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C392.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C393" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C393.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C394.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C395" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C395.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C396" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C396.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C397" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C397.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C398" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C398.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C399.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C3_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C3-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C4.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C40.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C400.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C401.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C402" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C402.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C403" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C403.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C404.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C405" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C405.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C406" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C406.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C407.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C408" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C408.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C409" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C409.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C41.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C410.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C411.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C412" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C412.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C413" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C413.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C414" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C414.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C415" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C415.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C416" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C416.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C417.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C418" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C418.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C419" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C419.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C42.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C420" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C420.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C421.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C422" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C422.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C423" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C423.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C424" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C424.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C425" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C425.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C426" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C426.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C427" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C427.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C428" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C428.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C428_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C428-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C429" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C429.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C43.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C430" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C430.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C431" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C431.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C432.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C433" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C433.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C434.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C435" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C435.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C436" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C436.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C437" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C437.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C438" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C438.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C439" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C439.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C44.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C440.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C441.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C442" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C442.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C443.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C444" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C444.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C445" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C445.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C445_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C445-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C446.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C447" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C447.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C448" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C448.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C448_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C448-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C449" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C449.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C45.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C450" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C450.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C451" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C451.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C452" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C452.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C453.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C454" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C454.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C455" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C455.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C456" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C456.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C457" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C457.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C458.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C459" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C459.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C46.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C460" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C460.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C460_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C460-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C461.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C462.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C463" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C463.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C464" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C464.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C465" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C465.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C466" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C466.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C467" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C467.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C468.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C469" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C469.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C47.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C470" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C470.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C471.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C472" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C472.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C473" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C473.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C474.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C475" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C475.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C475_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C475-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C476" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C476.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C477" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C477.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C478" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C478.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C479" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C479.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C48.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C480.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C481.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C482" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C482.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C483" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C483.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C484" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C484.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C485" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C485.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C486.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C487.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C488" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C488.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C489" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C489.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C49.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C490" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C490.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C491.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C492" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C492.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C492_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C492-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C493.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C494" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C494.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C495" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C495.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C496" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C496.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C497" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C497.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C498" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C498.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C499" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C499.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C5.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C50.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C500.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C501.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C502.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C503" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C503.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C504" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C504.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C505" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C505.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C506" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C506.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C507.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C508" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C508.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C509" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C509.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C51.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C510.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C511.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C512.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C513" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C513.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C514" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C514.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C515" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C515.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C516.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C517" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C517.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C518" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C518.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C519" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C519.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C52.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C520" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C520.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C521.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C522.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C523" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C523.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C524" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C524.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C525" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C525.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C526" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C526.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C527" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C527.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C528" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C528.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C529" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C529.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C53.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C530" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C530.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C531" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C531.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C531_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C531-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C532.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C533" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C533.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C534.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C535" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C535.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C536" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C536.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C537" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C537.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C538" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C538.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C539.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C54.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C540.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C541.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C542.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C543" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C543.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C544" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C544.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C545" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C545.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C546.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C547" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C547.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C548" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C548.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C549" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C549.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C55.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C550" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C550.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C551.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C552.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C553" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C553.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C554" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C554.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C555" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C555.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C556" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C556.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C557" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C557.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C558.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C559" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C559.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C56.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C560" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C560.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C561.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C562" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C562.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C563" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C563.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C564.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C565" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C565.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C566" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C566.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C567" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C567.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C568" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C568.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C569" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C569.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C57.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C570" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C570.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C571" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C571.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C572" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C572.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C573" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C573.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C574" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C574.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C575" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C575.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C576" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C576.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C577" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C577.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C578" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C578.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C579" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C579.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C58.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C580" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C580.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C581.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C582" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C582.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C583" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C583.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C584" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C584.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C585" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C585.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C586.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C587" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C587.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C588" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C588.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C589" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C589.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C59.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C590" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C590.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C591.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C592" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C592.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C593" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C593.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C594" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C594.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C595" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C595.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C596" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C596.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C597.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C598" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C598.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C599" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C599.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C6.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C60.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C600.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C601.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C602.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C603" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C603.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C604" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C604.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C605" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C605.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C606" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C606.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C607" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C607.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C608" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C608.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C609" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C609.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C61.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C610" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C610.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C611" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C611.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C612.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C613" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C613.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C614" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C614.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C615" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C615.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C616.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C617" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C617.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C618" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C618.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C619" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C619.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C62.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C620" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C620.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C621" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C621.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C622" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C622.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C623" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C623.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C624" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C624.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C625" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C625.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C626" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C626.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C627" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C627.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C628" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C628.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C629" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C629.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C63.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C630" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C630.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C631" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C631.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C632" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C632.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C633" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C633.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C634" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C634.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C635" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C635.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C636" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C636.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C637" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C637.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C638" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C638.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C639" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C639.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C64.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C640.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C641.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C641_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C641-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C642.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C642_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C642-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C643.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C644.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C645.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C645_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C645-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C646" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C646.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C646_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C646-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C646_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C646-2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C647.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C648.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C649" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C649.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C65.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C650" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C650.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C651" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C651.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C652" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C652.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C653" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C653.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C654" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C654.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C655" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C655.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C65535" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C65535.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C656" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C656.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C657" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C657.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C658" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C658.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C659" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C659.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C65_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C65-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C66.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C660" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C660.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C661" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C661.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C662" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C662.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C663" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C663.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C664" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C664.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C665" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C665.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C666" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C666.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C667" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C667.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C668" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C668.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C669" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C669.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C67.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C670" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C670.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C670_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C670-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C671" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C671.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C672" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C672.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C673" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C673.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C674" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C674.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C675" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C675.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C676" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C676.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C677" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C677.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C678" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C678.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C679" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C679.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C68.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C680" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C680.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C681" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C681.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C682" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C682.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C683" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C683.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C684" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C684.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C685" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C685.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C686" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C686.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C687" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C687.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C688" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C688.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C689" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C689.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C69.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C690" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C690.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C691" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C691.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C692" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C692.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C693" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C693.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C694" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C694.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C695" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C695.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C696" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C696.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C697" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C697.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C698" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C698.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C699" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C699.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C6_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C6-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C6_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C6-2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C7.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C70.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C700.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C701" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C701.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C702.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C703" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C703.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C704" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C704.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C705" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C705.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C706" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C706.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C707" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C707.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C708" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C708.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C709" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C709.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C71.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C710" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C710.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C710_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C710-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C711" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C711.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C711_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C711-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C712" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C712.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C713" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C713.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C714" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C714.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C715" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C715.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C716" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C716.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C717" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C717.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C718" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C718.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C719" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C719.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C72.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C720.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C720_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C720-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C721" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C721.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C73.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C74.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C75.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C76.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C77.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C78.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C79.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C8.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C80.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C80_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C80-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C81.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C82.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C83.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C84.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C85.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C86.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C87.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C88.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C89.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C9.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C90.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C91.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C92.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C93.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C94.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C94_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C94-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C95.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C96.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C97.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C98.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C99.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C9_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snd\C9-1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

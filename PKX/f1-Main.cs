@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using Accessibility;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -177,7 +178,7 @@ namespace PKHeX
                 "Português", // Portuguese
             };
         private static string origintrack;
-        private readonly PictureBox[] SlotPictureBoxes;
+        private readonly AccessiblePictureBox[] SlotPictureBoxes;
         private readonly String[] SlotCries;
         private static bool criesAreExternal;
         private static string criesPath;

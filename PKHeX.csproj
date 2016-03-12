@@ -68,6 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accessible\AccessiblePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Legality\Analysis.cs" />
     <Compile Include="Legality\Core.cs" />
     <Compile Include="Legality\Data.cs" />

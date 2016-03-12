@@ -1,5 +1,4 @@
-﻿//using Accessibility;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -178,7 +177,7 @@ namespace PKHeX
                 "Português", // Portuguese
             };
         private static string origintrack;
-        private readonly AccessiblePictureBox[] SlotPictureBoxes;
+        private readonly PictureBox[] SlotPictureBoxes;
         private readonly String[] SlotCries;
         private static bool criesAreExternal;
         private static string criesPath;
@@ -2082,9 +2081,10 @@ if(Label_IsShiny.Visible) {
             updateIVs(null, null);   // If the EC is changed, EC%6 (Characteristic) might be changed. 
             TB_PID.Select(60, 0);   // position cursor at end of field
         }
-
         private void validateComboBox(object sender)
         {
+            if (!formInitialized)
+                return;
             ComboBox cb = sender as ComboBox;
             if (cb == null) 
                 return;
@@ -2121,24 +2121,23 @@ if(Label_IsShiny.Visible) {
             if (new[] { CB_Move1, CB_Move2, CB_Move3, CB_Move4 }.Contains(sender)) // Move
                 updatePP(sender, e);
 
-            int[] relearnMoves = { Util.getIndex(CB_RelearnMove1), Util.getIndex(CB_RelearnMove2), Util.getIndex(CB_RelearnMove3), Util.getIndex(CB_RelearnMove4) };
-            int[] moves = { Util.getIndex(CB_Move1), Util.getIndex(CB_Move2), Util.getIndex(CB_Move3), Util.getIndex(CB_Move4) };
-
+            
             // Refresh Relearn if...
             if (new[] { CB_RelearnMove1, CB_RelearnMove2, CB_RelearnMove3, CB_RelearnMove4 }.Contains(sender))
             {
-                PictureBox[] moveCB = { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
-                bool[] legal = Legality.getRelearnValidity(relearnMoves);
+                pk6.RelearnMoves = new[] { Util.getIndex(CB_RelearnMove1), Util.getIndex(CB_RelearnMove2), Util.getIndex(CB_RelearnMove3), Util.getIndex(CB_RelearnMove4) };
+                Legality.updateRelearnLegality();
+                PictureBox[] movePB = { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
                 for (int i = 0; i < 4; i++)
-                    moveCB[i].Visible = !legal[i];
+                    movePB[i].Visible = !Legality.vRelearn[i];
             }
-
-            // Refresh Moves
+            // else, Refresh Moves
             {
-                PictureBox[] moveCB = { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
-                bool[] legal = Legality.getMoveValidity(moves, relearnMoves);
+                pk6.Moves = new[] { Util.getIndex(CB_Move1), Util.getIndex(CB_Move2), Util.getIndex(CB_Move3), Util.getIndex(CB_Move4) };
+                Legality.updateMoveLegality();
+                PictureBox[] movePB = { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
                 for (int i = 0; i < 4; i++)
-                    moveCB[i].Visible = !legal[i];
+                    movePB[i].Visible = !Legality.vMoves[i];
             }
         }
         private void validateLocation(object sender, EventArgs e)
@@ -2168,7 +2167,12 @@ if(Label_IsShiny.Visible) {
             Legality = new LegalityAnalysis(pk6);
 
             // Refresh Move Legality
-            validateMove(CB_RelearnMove1, null);
+            PictureBox[] movePB = {PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4};
+            for (int i = 0; i < 4; i++)
+                movePB[i].Visible = !Legality.vMoves[i];
+            PictureBox[] relPB = {PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4};
+            for (int i = 0; i < 4; i++)
+                relPB[i].Visible = !Legality.vRelearn[i];
         }
         private void updateStats()
         {
@@ -2512,6 +2516,8 @@ if(Label_IsShiny.Visible) {
         // Decrypted Export
         private void dragout_MouseDown(object sender, MouseEventArgs e)
         {
+            if (e.Button == MouseButtons.Left && (ModifierKeys == Keys.Alt || ModifierKeys == Keys.Shift))
+                clickQR(sender, e);
             if (e.Button == MouseButtons.Right)
                 return;
             if (!verifiedPKX())
@@ -2998,8 +3004,12 @@ if(Label_IsShiny.Visible) {
             if (!fieldsInitialized) return;
             pk = pk ?? preparepkx(false); // don't perform control loss click
 
+<<<<<<< HEAD
             if (pb == dragout) L_QR.Visible = pk.Species != 0; // Species
             else SlotCries[cryIndex] = pk.Species.ToString();
+=======
+            if (pb == dragout) mnuLQR.Enabled = pk.Species != 0; // Species
+>>>>>>> master
             pb.Image = pk.Sprite;
 }
         private void getSlotFiller(int offset, PictureBox pb, int cryIndex)

@@ -1,35 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace PKHeX
 {
-    public enum Severity
-    {
-        Indeterminate = -2,
-        Invalid = -1,
-        Fishy = 0,
-        Valid = 1,
-        NotImplemented = 2,
-    }
-    public class LegalityCheck
-    {
-        public Severity Judgement = Severity.Invalid;
-        public string Comment;
-        public bool Valid => Judgement >= Severity.Fishy;
-
-        public LegalityCheck() { }
-        public LegalityCheck(Severity s, string c)
-        {
-            Judgement = s;
-            Comment = c;
-        }
-    }
     public class LegalityAnalysis
     {
         private readonly PK6 pk6;
+        public bool[] vMoves = new bool[4];
+        public bool[] vRelearn = new bool[4];
         public LegalityAnalysis(PK6 pk)
         {
             pk6 = pk;
+            updateRelearnLegality();
+            updateMoveLegality();
+        }
+        public void updateRelearnLegality()
+        {
+            vRelearn = getRelearnValidity(pk6.RelearnMoves);
+        }
+        public void updateMoveLegality()
+        {
+            vMoves = getMoveValidity(pk6.Moves, pk6.RelearnMoves);
         }
 
         public bool[] getMoveValidity(int[] Moves, int[] RelearnMoves)
@@ -65,27 +57,25 @@ namespace PKHeX
 
             if (Moves.Length != 4)
                 return new bool[4];
-
-            bool link = pk6.Met_Location == 30011;
-            if (link)
+            if (pk6.WasLink)
             {
                 if (pk6.FatefulEncounter) // Should NOT be Fateful
                     return new bool[4]; // False
                 int[] moves = Legal.getLinkMoves(pk6);
                 return moves.SequenceEqual(Moves) ? res : new bool[4];
             }
-            bool egg = Legal.EggLocations.Contains(pk6.Egg_Location) && pk6.Met_Level == 1;
-            bool evnt = pk6.FatefulEncounter && pk6.Met_Location > 40000;
-            bool eventEgg = pk6.FatefulEncounter && (pk6.Egg_Location > 40000 || pk6.Egg_Location == 30002) && pk6.Met_Level == 1;
-            int[] relearnMoves = Legal.getValidRelearn(pk6, 0);
-            if (evnt || eventEgg)
+            if (pk6.WasEvent || pk6.WasEventEgg)
             {
                 // Get WC6's that match
                 IEnumerable<WC6> vwc6 = Legal.getValidWC6s(pk6);
                 if (vwc6.Any(wc6 => wc6.RelearnMoves.SequenceEqual(Moves)))
                     return res; // all true
+
+                goto noRelearn; // No WC match
             }
-            else if (egg)
+
+            int[] relearnMoves = Legal.getValidRelearn(pk6, 0);
+            if (pk6.WasEgg)
             {
                 if (Legal.SplitBreed.Contains(pk6.Species))
                 {
@@ -108,7 +98,7 @@ namespace PKHeX
                     res[i] &= relearnMoves.Contains(Moves[i]);
                 return res;
             }
-            else if (Moves[0] != 0) // DexNav only?
+            if (Moves[0] != 0) // DexNav only?
             {
                 // Check DexNav
                 for (int i = 0; i < 4; i++)
@@ -125,13 +115,39 @@ namespace PKHeX
                 res[i] = Moves[i] == 0;
             return res;
         }
-
-        public bool Valid = false;
-        public LegalityCheck EC, Nickname, PID, IDs, IVs, EVs;
+        
+        public LegalityCheck EC, Nickname, PID, IDs, IVs, EVs, Encounter;
         public string Report => getLegalityReport();
         private string getLegalityReport()
         {
-            return null;
+            if (!pk6.Gen6)
+                return "Analysis only available for Pokémon that originate from X/Y & OR/AS.";
+
+            EC = LegalityCheck.verifyECPID(pk6);
+            Nickname = LegalityCheck.verifyNickname(pk6);
+            PID = LegalityCheck.verifyECPID(pk6);
+            IVs = LegalityCheck.verifyIVs(pk6);
+            EVs = LegalityCheck.verifyEVs(pk6);
+            IDs = LegalityCheck.verifyID(pk6);
+            Encounter = LegalityCheck.verifyEncounter(pk6);
+
+            var chks = new[] {EC, Nickname, PID, IVs, EVs, IDs, Encounter};
+
+            string r = "";
+            for (int i = 0; i < 4; i++)
+                if (!vMoves[i])
+                    r += $"Invalid: Move {i + 1}{Environment.NewLine}";
+            for (int i = 0; i < 4; i++)
+                if (!vRelearn[i])
+                    r += $"Invalid: Relearn Move {i + 1}{Environment.NewLine}";
+
+            if (r.Length == 0 && chks.All(chk => chk.Valid))
+                return "Legal!";
+
+            // Build result string...
+            r += chks.Where(chk => !chk.Valid).Aggregate("", (current, chk) => current + $"{chk.Judgement}: {chk.Comment}{Environment.NewLine}");
+
+            return r;
         }
     }
 }

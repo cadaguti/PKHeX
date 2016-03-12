@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Accessibility.Controls;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -177,7 +178,7 @@ namespace PKHeX
                 "Português", // Portuguese
             };
         private static string origintrack;
-        private readonly PictureBox[] SlotPictureBoxes;
+        private readonly AccessiblePictureBox[] SlotPictureBoxes;
         private readonly String[] SlotCries;
         private static bool criesAreExternal;
         private static string criesPath;
@@ -2999,17 +3000,13 @@ if(Label_IsShiny.Visible) {
             }
             CB_BoxSelect.SelectedIndex = selectedbox; // restore selected box
         }
-        private void getQuickFiller(PictureBox pb, int cryIndex = -1, PK6 pk = null)
+        private void getQuickFiller(AccessiblePictureBox pb, int cryIndex = -1, PK6 pk = null)
         {
             if (!fieldsInitialized) return;
             pk = pk ?? preparepkx(false); // don't perform control loss click
 
-<<<<<<< HEAD
-            if (pb == dragout) L_QR.Visible = pk.Species != 0; // Species
-            else SlotCries[cryIndex] = pk.Species.ToString();
-=======
             if (pb == dragout) mnuLQR.Enabled = pk.Species != 0; // Species
->>>>>>> master
+            else SlotCries[cryIndex] = pk.Species.ToString();
             pb.Image = pk.Sprite;
 }
         private void getSlotFiller(int offset, PictureBox pb, int cryIndex)

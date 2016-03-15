@@ -22434,12 +22434,8 @@ namespace PKHeX.Properties {
         ///- Species: Import Showdown/Smogon set from Clipboard.
         ///- Nickname/OT box: Bring up the ingame-special characters.
         ///- Randomize IVs: Set all IVs to max.
-<<<<<<< HEAD
-        ///-  [resto de la cadena truncado]&quot;;.
-=======
         ///- Randomize EVs: Set all EVs to 0.
         ///- PP Ups Label: Set all PP Ups t [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string shortcuts {
             get {
@@ -25199,11 +25195,7 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a －－－－－－－－－－
-=======
         ///   Looks up a localized string similar to ----------
->>>>>>> master
         ///谜的地点
         ///遥远的地点
         ///\xf000Ā\x0001\x0000の\xf000ą\x0001\x0001
@@ -25217,26 +25209,6 @@ namespace PKHeX.Properties {
         ///吹寄市
         ///雪花市
         ///双龙市
-<<<<<<< HEAD
-        ///１号路
-        ///２号路
-        ///３号路
-        ///４号路
-        ///５号路
-        ///６号路
-        ///７号路
-        ///８号路
-        ///９号路
-        ///１０号路
-        ///１１号路
-        ///１２号路
-        ///１３号路
-        ///１４号路
-        ///１５号路
-        ///１６号路
-        ///１７号水路
-        ///１８号路
-=======
         ///1号路
         ///2号路
         ///3号路
@@ -25255,7 +25227,6 @@ namespace PKHeX.Properties {
         ///16号路
         ///17号水路
         ///18号路
->>>>>>> master
         ///梦的遗址
         ///矢车森林
         ///荒野名胜区
@@ -25305,11 +25276,7 @@ namespace PKHeX.Properties {
         ///吹寄市
         ///雪花市
         ///双龙市
-<<<<<<< HEAD
-        ///鹿 [resto de la cadena truncado]&quot;;.
-=======
         ///鹿 [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_bw2_00000_zh {
             get {
@@ -25479,11 +25446,7 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a －－－－－－－－－－
-=======
         ///   Looks up a localized string similar to ----------
->>>>>>> master
         ///通信交换机
         ///通信交换机
         ///关都地区
@@ -25491,19 +25454,11 @@ namespace PKHeX.Properties {
         ///丰缘地区
         ///神奥地区
         ///遥远的地方
-<<<<<<< HEAD
-        ///－－－－－－－－－－
-        ///－－－－－－－－－－
-        ///－－－－－－－－－－
-        ///－－－－－－－－－－
-        ///－－－－－－－－－－
-=======
         ///----------
         ///----------
         ///----------
         ///----------
         ///----------
->>>>>>> master
         ///潜入连接
         ///口袋妖怪AR搜索者.
         /// </summary>
@@ -25885,21 +25840,12 @@ namespace PKHeX.Properties {
         ///口袋妖怪电影20
         ///口袋妖怪中心
         ///口袋妖怪动画
-<<<<<<< HEAD
-        ///ＰＣ东京
-        ///ＰＣ大阪
-        ///ＰＣ福冈
-        ///ＰＣ名古屋
-        ///ＰＣ札幌
-        ///ＰＣ横滨
-=======
         ///PC东京
         ///PC大阪
         ///PC福冈
         ///PC名古屋
         ///PC札幌
         ///PC横滨
->>>>>>> master
         ///WCS
         ///WCS2010
         ///WCS2011
@@ -25925,17 +25871,6 @@ namespace PKHeX.Properties {
         ///Worlds2019
         ///Worlds2020
         ///VGE
-<<<<<<< HEAD
-        ///VGE２０１０
-        ///VGE２０１１
-        ///VGE２０１２
-        ///VGE２０１３
-        ///VGE２０１４
-        ///VGE２０１５
-        ///VGE２０１６
-        ///VGE２０１７
-        ///VGE２０１ [resto de la cadena truncado]&quot;;.
-=======
         ///VGE2010
         ///VGE2011
         ///VGE2012
@@ -25945,7 +25880,6 @@ namespace PKHeX.Properties {
         ///VGE2016
         ///VGE2017
         ///VGE201 [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_bw2_40000_zh {
             get {
@@ -29771,11 +29705,7 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a －－－－
-=======
         ///   Looks up a localized string similar to ----
->>>>>>> master
         ///双叶镇
         ///真砂镇
         ///苑之镇
@@ -29790,61 +29720,6 @@ namespace PKHeX.Properties {
         ///帷幕市
         ///滨海市
         ///切锋市
-<<<<<<< HEAD
-        ///口袋妖怪-屋
-        ///２０１号路
-        ///２０２号路
-        ///２０３号路
-        ///２０４号路
-        ///２０５号路
-        ///２０６号路
-        ///２０７号路
-        ///２０８号路
-        ///２０９号路
-        ///２１０号路
-        ///２１１号路
-        ///２１２号路
-        ///２１３号路
-        ///２１４号路
-        ///２１５号路
-        ///２１６号路
-        ///２１７号路
-        ///２１８号路
-        ///２１９号路
-        ///２２０ばんすいどう
-        ///２２１号路
-        ///２２２号路
-        ///２２３ばんすいどう
-        ///２２４号路
-        ///２２５号路
-        ///２２６ばんすいどう
-        ///２２７号路
-        ///２２８号路
-        ///２２９号路
-        ///２３０ばんすいどう
-        ///クロガネたんこう
-        ///たにまのはつでんしょ
-        ///ハクタイのもり
-        ///タタラせいてつじょ
-        ///テンガンざん
-        ///やりのはしら
-        ///だいしつげん
-        ///ズイのいせき
-        ///チャンピオンロ－ド
-        ///パルパ－ク
-        ///ふれあいひろば
-        ///あれたぬけみち
-        ///ソノオのはなばたけ
-        ///クロガネゲ－ト
-        ///まんげつじま
-        ///おくりのいずみ
-        ///もどりのどうくつ
-        ///はなのらくえん
-        ///キッサキしんでん
-        ///まよいのどうくつ
-        ///いせきマニアのあな
-        ///マニアトン [resto de la cadena truncado]&quot;;.
-=======
         ///口袋联盟
         ///201号路
         ///202号路
@@ -29914,7 +29789,6 @@ namespace PKHeX.Properties {
         ///战斗区
         ///生存区
         ///名胜区        /// [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_hgss_00000_zh {
             get {
@@ -30428,13 +30302,8 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a 谜之地方
-        ///口袋妖怪保育家－
-=======
         ///   Looks up a localized string similar to 谜之地方
         ///口袋妖怪保育家
->>>>>>> master
         ///遥远的地方
         ///口袋妖怪电影
         ///口袋妖怪电影06
@@ -30474,18 +30343,6 @@ namespace PKHeX.Properties {
         ///口袋妖怪盛典15
         ///口袋妖怪盛典16
         ///口袋妖怪乐园
-<<<<<<< HEAD
-        ///口袋妖怪乐园０６
-        ///口袋妖怪乐园０７
-        ///口袋妖怪乐园０８
-        ///口袋妖怪乐园０９
-        ///口袋妖怪乐园１０
-        ///口袋妖怪乐园１１
-        ///口袋妖怪乐园１２
-        ///口袋妖怪乐园１３
-        ///口袋妖怪乐园１４
-        ///口袋妖怪乐园１ [resto de la cadena truncado]&quot;;.
-=======
         ///口袋妖怪乐园06
         ///口袋妖怪乐园07
         ///口袋妖怪乐园08
@@ -30503,7 +30360,6 @@ namespace PKHeX.Properties {
         ///PC福冈
         ///PC名古屋
         ///PC札 [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_hgss_03000_zh {
             get {
@@ -31989,11 +31845,7 @@ namespace PKHeX.Properties {
         ///模仿
         ///噪音
         ///影子分身
-<<<<<<< HEAD
-        ///自 [resto de la cadena truncado]&quot;;.
-=======
         ///自 [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_moves_zh {
             get {
@@ -32489,13 +32341,8 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a ポロックケース
-        ///きのみブレンダー
-=======
         ///   Looks up a localized string similar to 能量方块盒
         ///树果混合器
->>>>>>> master
         ///ポロックを　あげる
         ///あげる
         ///ポロックを　つくる
@@ -32525,12 +32372,8 @@ namespace PKHeX.Properties {
         ///ブレンドスタート
         ///きのみを　もどす
         ///ポケモンにあげる
-<<<<<<< HEAD
-        ///やめる [resto de la cadena truncado]&quot;;.
-=======
         ///やめる
         ///はい        /// [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_pokeblock_zh {
             get {
@@ -32764,34 +32607,6 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a スイートポフレ
-        ///フレッシュポフレ
-        ///サワーポフレ
-        ///ビターポフレ
-        ///スパイシーポフレ
-        ///レアスイートポフレ
-        ///レアフレッシュポフレ
-        ///レアサワーポフレ
-        ///レアビターポフレ
-        ///レアスパイシーポフレ
-        ///リッチスイートポフレ
-        ///リッチフレッシュポフレ
-        ///リッチサワーポフレ
-        ///リッチビターポフレ
-        ///リッチスパイシーポフレ
-        ///プチデコスイートポフレ
-        ///プチデコフレッシュポフレ
-        ///プチデコサワーポフレ
-        ///プチデコビターポフレ
-        ///プチデコスパイシーポフレ
-        ///フルデコバースデーポフレ
-        ///フルデコメモリアルポフレ
-        ///フルデコはるポフレ
-        ///フルデコなつポフレ
-        ///フルデコあきポフレ
-        ///フルデコふゆポフレ.
-=======
         ///   Looks up a localized string similar to 甘甜泡芙
         ///清新泡芙
         ///酸涩泡芙
@@ -32818,7 +32633,6 @@ namespace PKHeX.Properties {
         ///豪华夏天泡芙
         ///豪华秋天泡芙
         ///豪华冬天泡芙.
->>>>>>> master
         /// </summary>
         internal static string text_puff_zh {
             get {
@@ -33649,54 +33463,13 @@ namespace PKHeX.Properties {
         ///인생역전! 출세 잉어킹
         ///경 [resto de la cadena truncado]&quot;;.
         /// </summary>
-<<<<<<< HEAD
-        internal static string text_SuperTraining_ko {
-            get {
-                return ResourceManager.GetString("text_SuperTraining_ko", resourceCulture);
-=======
         internal static string text_supertraining_ko {
             get {
                 return ResourceManager.GetString("text_supertraining_ko", resourceCulture);
->>>>>>> master
             }
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a おためしトレーニング！ コフキムシ
-        ///コフーライ！ きめろ ガッツシュート
-        ///とくこうトレーニング VSコイル
-        ///HPトレーニング VSホエルコ
-        ///こうげきトレーニング VSキバゴ
-        ///とくぼうトレーニング VSメノクラゲ
-        ///すばやさトレーニング VSオンバット
-        ///ぼうぎょトレーニング VSイシツブテ
-        ///ついびシュート！ レアコイル
-        ///ジーランスの チャンスゴール！
-        ///ばらまきシュート！ オノンド
-        ///ドククラゲと ビットバルーン！
-        ///こうそくシュート！ プテラ
-        ///ゴローンの ブロックを くずせ！
-        ///ふりきれ！ まきゅうの ジバコイル
-        ///むかえうて！ きょだい ホエルオー
-        ///みきれ！ もうこうの オノノクス
-        ///けちらせ！ ドラミドロ ぐんだん
-        ///とらえろ！ はやての オンバーン
-        ///やぶれ！ ゴローニャ ぼうえいライン
-        ///いちなん さって また いちなん！？
-        ///いっとう しょうひん リーフのいし！
-        ///いっとう しょうひん ほのおのいし！
-        ///いっとう しょうひん みずのいし！
-        ///にげる ゴールを おえ！
-        ///はんげきの こうはんせん！
-        ///そっこうの ぜんはんせん！
-        ///じゅうおう むじん ロングシュート！
-        ///ぎゃくしゅう [resto de la cadena truncado]&quot;;.
-        /// </summary>
-        internal static string text_SuperTraining_zh {
-            get {
-                return ResourceManager.GetString("text_SuperTraining_zh", resourceCulture);
-=======
         ///   Looks up a localized string similar to 试验训练！粉蛹
         ///粉蝶蛹！精力射门
         ///特攻训练 VS小磁怪
@@ -33739,7 +33512,6 @@ namespace PKHeX.Properties {
         internal static string text_supertraining_zh {
             get {
                 return ResourceManager.GetString("text_supertraining_zh", resourceCulture);
->>>>>>> master
             }
         }
         
@@ -33989,39 +33761,6 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a 
-        ///HPバッグS
-        ///HPバッグM
-        ///HPバッグL
-        ///こうげきバッグS
-        ///こうげきバッグM
-        ///こうげきバッグL
-        ///ぼうぎょバッグS
-        ///ぼうぎょバッグM
-        ///ぼうぎょバッグL
-        ///とくこうバッグS
-        ///とくこうバッグM
-        ///とくこうバッグL
-        ///とくぼうバッグS
-        ///とくぼうバッグM
-        ///とくぼうバッグL
-        ///すばやさバッグS
-        ///すばやさバッグM
-        ///すばやさバッグL
-        ///パワーUPバッグ
-        ///ガードUPバッグ
-        ///ムーブUPバッグ
-        ///サイズUPバッグ
-        ///ダブルUPバッグ
-        ///フレアだんバッグ
-        ///まっさらバッグ
-        ///リラックスバッグ.
-        /// </summary>
-        internal static string text_TrainingBag_zh {
-            get {
-                return ResourceManager.GetString("text_TrainingBag_zh", resourceCulture);
-=======
         ///   Looks up a localized string similar to 
         ///HP沙袋S
         ///HP沙袋M
@@ -34053,7 +33792,6 @@ namespace PKHeX.Properties {
         internal static string text_trainingbag_zh {
             get {
                 return ResourceManager.GetString("text_trainingbag_zh", resourceCulture);
->>>>>>> master
             }
         }
         
@@ -34996,11 +34734,7 @@ namespace PKHeX.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
-        ///   Busca una cadena traducida similar a －－－－－－－－－－
-=======
         ///   Looks up a localized string similar to ----------
->>>>>>> master
         ///
         ///谜之地点
         ///
@@ -35105,12 +34839,8 @@ namespace PKHeX.Properties {
         ///22号路
         ///绕行之路
         ///冠军之路
-<<<<<<< HEAD
-        ///        /// [resto de la cadena truncado]&quot;;.
-=======
         ///
         /// [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_xy_00000_zh {
             get {
@@ -35660,16 +35390,10 @@ namespace PKHeX.Properties {
         ///口袋妖怪活动17
         ///口袋妖怪活动18
         ///口袋妖怪盛典
-<<<<<<< HEAD
-        ///口袋妖怪盛典１３
-        ///口袋妖怪盛典１４
-        /// [resto de la cadena truncado]&quot;;.
-=======
         ///口袋妖怪盛典13
         ///口袋妖怪盛典14
         ///口袋妖怪盛典15
         ///口袋妖怪盛典1 [rest of string was truncated]&quot;;.
->>>>>>> master
         /// </summary>
         internal static string text_xy_40000_zh {
             get {

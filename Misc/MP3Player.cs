@@ -3,8 +3,8 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace PKHeX
-{
+    namespace PKHeX
+    {
         public class MP3Player
         {
             private string _command;
@@ -12,31 +12,31 @@ namespace PKHeX
             [DllImport("winmm.dll")]
 
             private static extern long mciSendString(string strCommand, StringBuilder strReturn, int iReturnLength, IntPtr hwndCallback);
-        private string tmpFile;
+            private string tmpFile;
 
-        public void Close()
+            public void Close()
             {
                 _command = "close MediaFile";
                 mciSendString(_command, null, 0, IntPtr.Zero);
-            if (File.Exists(tmpFile))
-            {
-                File.Delete(tmpFile);
-            }
-            isOpen = false;
+                isOpen = false;
             }
 
-        public void Open(Byte[] data)
-        {
+            public void Load(Byte[] data)
+            {
+            DeleteResidualTMP();
             tmpFile = createTMP();
-            if (File.Exists(tmpFile))
-            {
-                writeData(data);
-                Open(tmpFile);
-            }
+                if (File.Exists(tmpFile))
+                {
+                    writeData(data);
+                    Open(tmpFile);
+                }
             }
 
-        public void Open(string sFileName)
+            public void Open(string sFileName)
             {
+if(isOpen) {
+                Close();
+            }
                 _command = "open \"" + sFileName + "\" type mpegvideo alias MediaFile";
                 mciSendString(_command, null, 0, IntPtr.Zero);
                 isOpen = true;
@@ -49,24 +49,32 @@ namespace PKHeX
                     _command = "play MediaFile";
                     mciSendString(_command, null, 0, IntPtr.Zero);
                 }
+            }
+
+            private string createTMP()
+            {
+                string fileName = string.Empty;
+                fileName = Path.GetTempFileName();
+                FileInfo fileInfo = new FileInfo(fileName);
+                fileInfo.Attributes = FileAttributes.Temporary;
+                return fileName;
+            }
+
+            private void writeData(Byte[] data)
+            {
+                FileStream streamWriter = new FileStream(tmpFile, FileMode.Open, FileAccess.Write);
+                streamWriter.Write(data, 0, data.Length);
+                streamWriter.Close();
+            }
+
+        private void DeleteResidualTMP()
+        {
+            if (File.Exists(tmpFile))
+            {
+                File.Delete(tmpFile);
+            }
         }
 
-        private string createTMP()
-    {
-        string fileName = string.Empty;
-        fileName = Path.GetTempFileName();
-        FileInfo fileInfo = new FileInfo(fileName);
-        fileInfo.Attributes = FileAttributes.Temporary;
-        return fileName;
-    }
-
-private void writeData(Byte[] data)
-    {
-        FileStream streamWriter = new FileStream(tmpFile, FileMode.Open, FileAccess.Write);
-                        streamWriter.Write(data, 0, data.Length);
-        streamWriter.Close();
     }
 
     }
-
-}

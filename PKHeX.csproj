@@ -71,6 +71,7 @@
     <Compile Include="Accessible\Controls.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Accessible\Interfaces.cs" />
     <Compile Include="Legality\Analysis.cs" />
     <Compile Include="Legality\Checks.cs" />
     <Compile Include="Legality\Core.cs" />

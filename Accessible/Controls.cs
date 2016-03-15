@@ -2,19 +2,23 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Accessibility
+
+namespace PKHeX
 {
-    namespace Controls
+    namespace Accessibility
     {
-        class AccessiblePictureBox : PictureBox
+        namespace Controls
         {
-
-            public AccessiblePictureBox()
+            class AccessiblePictureBox : PictureBox
             {
-                this.SetStyle(ControlStyles.Selectable, true);
-                this.TabStop = true;
-            }
 
+                public AccessiblePictureBox()
+                {
+                    this.SetStyle(ControlStyles.Selectable, true);
+                    this.TabStop = true;
+                }
+
+            }
         }
     }
 }

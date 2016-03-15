@@ -37,6 +37,8 @@ namespace PKHeX
                                 };
             SlotCries = new int[SlotPictureBoxes.Length];
             cry = new CrySystem("cries\\", ".mp3", "C", 721, 65535);
+            relearnPB = new[] { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
+            movePB = new[] { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
             defaultControlWhite = CB_Species.BackColor;
             defaultControlText = Label_Species.ForeColor;
             CB_ExtraBytes.SelectedIndex = 0;
@@ -75,7 +77,7 @@ namespace PKHeX
 
             string[] args = Environment.GetCommandLineArgs();
             string filename = args.Length > 0 ? Path.GetFileNameWithoutExtension(args[0]) : "";
-            HaX = filename.IndexOf("HaX", StringComparison.Ordinal) >= 0;
+            HaX = filename.ToLower().IndexOf("hax", StringComparison.Ordinal) >= 0;
             // Show Hacked Stuff if HaX
             CHK_HackedStats.Enabled = CHK_HackedStats.Visible = DEV_Ability.Enabled = DEV_Ability.Visible =
             MT_Level.Enabled = MT_Level.Visible = TB_AbilityNumber.Visible = MT_Form.Enabled = MT_Form.Visible = HaX;
@@ -178,9 +180,10 @@ namespace PKHeX
             };
         private static string origintrack;
         private readonly AccessiblePictureBox[] SlotPictureBoxes;
-        private static int[] SlotCries;
-        private static CrySystem cry;
+        private readonly PictureBox[] movePB, relearnPB;
         private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
+        private readonly  int[] SlotCries;
+        private readonly  CrySystem cry;
         #endregion
 
         #region //// MAIN MENU FUNCTIONS ////
@@ -401,8 +404,8 @@ namespace PKHeX
 
             // Set Form
             string[] formStrings = PKX.getFormList(Set.Species,
-                Util.getStringList("Types", "en"),
-                Util.getStringList("Forms", "en"), gendersymbols);
+                Util.getStringList("types", "en"),
+                Util.getStringList("forms", "en"), gendersymbols);
             int form = 0;
             for (int i = 0; i < formStrings.Length; i++)
                 if (formStrings[i].Contains(Set.Form ?? ""))
@@ -637,7 +640,10 @@ namespace PKHeX
             }
             #endregion
             #region Wondercard
-            else if (input.Length == WC6.Size && ext == ".wc6")
+            else if ((input.Length == WC6.Size && ext == ".wc6") || (input.Length == WC6.SizeFull && ext == ".wcfull6"))
+            {
+                if (input.Length == WC6.SizeFull) // Take bytes at end = WC6 size.
+                    input = input.Skip(WC6.SizeFull - WC6.Size).ToArray();
                 if (ModifierKeys == Keys.Control)
                     new SAV_Wondercard(input).Show();
                 else
@@ -651,6 +657,7 @@ namespace PKHeX
                     }
                     populateFields(pk);
                 }
+            }
             else if (input.Length == PGF.Size && ext == ".pgf")
             {
                 PK5 pk = new PGF(input).convertToPK5(SAV);
@@ -842,17 +849,17 @@ namespace PKHeX
                 curlanguage = lang_val[CB_MainLanguage.SelectedIndex];
 
             string l = curlanguage;
-            natures = Util.getStringList("Natures", l);
-            types = Util.getStringList("Types", l);
-            abilitylist = Util.getStringList("Abilities", l);
-            movelist = Util.getStringList("Moves", l);
-            itemlist = Util.getStringList("Items", l);
-            characteristics = Util.getStringList("Character", l);
-            specieslist = Util.getStringList("Species", l);
-            wallpapernames = Util.getStringList("Wallpaper", l);
-            itempouch = Util.getStringList("ItemPouch", l);
-            encountertypelist = Util.getStringList("EncounterType", l);
-            gamelist = Util.getStringList("Games", l);
+            natures = Util.getStringList("natures", l);
+            types = Util.getStringList("types", l);
+            abilitylist = Util.getStringList("abilities", l);
+            movelist = Util.getStringList("moves", l);
+            itemlist = Util.getStringList("items", l);
+            characteristics = Util.getStringList("character", l);
+            specieslist = Util.getStringList("species", l);
+            wallpapernames = Util.getStringList("wallpaper", l);
+            itempouch = Util.getStringList("itempouch", l);
+            encountertypelist = Util.getStringList("encountertype", l);
+            gamelist = Util.getStringList("games", l);
             gamelanguages = Util.getNulledStringArray(Util.getStringList("languages"));
 
             balllist = new string[Legal.Items_Ball.Length];
@@ -861,13 +868,13 @@ namespace PKHeX
 
             if ((l != "zh") || (l == "zh" && !fieldsInitialized)) // load initial binaries
             {
-                pokeblocks = Util.getStringList("Pokeblock", l);
-                forms = Util.getStringList("Forms", l);
-                memories = Util.getStringList("Memories", l);
-                genloc = Util.getStringList("GenLoc", l);
-                trainingbags = Util.getStringList("TrainingBag", l);
-                trainingstage = Util.getStringList("SuperTraining", l);
-                puffs = Util.getStringList("Puff", l);
+                pokeblocks = Util.getStringList("pokeblock", l);
+                forms = Util.getStringList("forms", l);
+                memories = Util.getStringList("memories", l);
+                genloc = Util.getStringList("genloc", l);
+                trainingbags = Util.getStringList("trainingbag", l);
+                trainingstage = Util.getStringList("supertraining", l);
+                puffs = Util.getStringList("puff", l);
             }
 
             // Fix Item Names (Duplicate entries)
@@ -963,11 +970,9 @@ namespace PKHeX
                 CB_GameOrigin.SelectedIndex = 0;
                 CB_Language.SelectedIndex = 0;
                 CB_BoxSelect.SelectedIndex = 0;
-                CB_GameOrigin.SelectedIndex = 0;
-                CB_PPu1.SelectedIndex = CB_PPu2.SelectedIndex = CB_PPu3.SelectedIndex = CB_PPu4.SelectedIndex = 0;
                 CB_Ball.SelectedIndex = 0;
                 CB_Country.SelectedIndex = 0;
-                setAbilityList(TB_AbilityNumber, Util.getIndex(CB_Species), CB_Ability, CB_Form);
+                CAL_MetDate.Value = CAL_EggDate.Value = DateTime.Today;
             }
         }
         private void InitializeLanguage()
@@ -1036,7 +1041,7 @@ namespace PKHeX
         public void populateFields(PK6 pk, bool focus = true)
         {
             pk6 = pk ?? new PK6();
-            if (fieldsInitialized & !PKX.verifychk(pk6.Data))
+            if (fieldsInitialized & !pk6.ChecksumValid)
                 Util.Alert("PKX File has an invalid checksum.");
 
             // Reset a little.
@@ -1118,7 +1123,7 @@ namespace PKHeX
             CB_MetLocation.SelectedValue = pk6.Met_Location;
 
             // Set CT Gender to None if no CT, else set to gender symbol.
-            Label_CTGender.Text = pk6.HT_Name == "" ? "" : gendersymbols[pk6.HT_Gender];
+            Label_CTGender.Text = pk6.HT_Name == "" ? "" : gendersymbols[pk6.HT_Gender % 2];
             Label_CTGender.ForeColor = pk6.HT_Gender == 1 ? Color.Red : Color.Blue;
 
             TB_MetLevel.Text = pk6.Met_Level.ToString();
@@ -2126,17 +2131,20 @@ namespace PKHeX
             {
                 pk6.RelearnMoves = new[] { Util.getIndex(CB_RelearnMove1), Util.getIndex(CB_RelearnMove2), Util.getIndex(CB_RelearnMove3), Util.getIndex(CB_RelearnMove4) };
                 Legality.updateRelearnLegality();
-                PictureBox[] movePB = { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
                 for (int i = 0; i < 4; i++)
-                    movePB[i].Visible = !Legality.vRelearn[i];
+                    movePB[i].Visible = !Legality.vRelearn[i].Valid;
             }
             // else, Refresh Moves
             {
                 pk6.Moves = new[] { Util.getIndex(CB_Move1), Util.getIndex(CB_Move2), Util.getIndex(CB_Move3), Util.getIndex(CB_Move4) };
                 Legality.updateMoveLegality();
-                PictureBox[] movePB = { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
                 for (int i = 0; i < 4; i++)
-                    movePB[i].Visible = !Legality.vMoves[i];
+                    movePB[i].Visible = !Legality.vMoves[i].Valid;
+            }
+            if (relearnPB.Any(p => p.Visible) || movePB.Any(p => p.Visible))
+            {
+                Legality.Valid = false;
+                PB_Legal.Image = Properties.Resources.warn;
             }
         }
         private void validateLocation(object sender, EventArgs e)
@@ -2153,10 +2161,13 @@ namespace PKHeX
         {
             ((ComboBox)sender).DroppedDown = false;
         }
-        private void showLegality(PK6 pk)
+        private void showLegality(PK6 pk, bool tabs)
         {
             LegalityAnalysis la = new LegalityAnalysis(pk);
             Util.Alert(la.Report); // temp
+            PB_Legal.Visible = pk.Gen6;
+            if (tabs)
+                PB_Legal.Image = Legality.Valid ? Properties.Resources.valid : Properties.Resources.warn;
         }
         private void updateLegality()
         {
@@ -2164,14 +2175,14 @@ namespace PKHeX
                 return;
 
             Legality = new LegalityAnalysis(pk6);
+            PB_Legal.Image = Legality.Valid ? Properties.Resources.valid : Properties.Resources.warn;
+            PB_Legal.Visible = pk6.Gen6;
 
             // Refresh Move Legality
-            PictureBox[] movePB = { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
             for (int i = 0; i < 4; i++)
-                movePB[i].Visible = !Legality.vMoves[i];
-            PictureBox[] relPB = { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
+                movePB[i].Visible = !Legality.vMoves[i].Valid;
             for (int i = 0; i < 4; i++)
-                relPB[i].Visible = !Legality.vRelearn[i];
+                relearnPB[i].Visible = !Legality.vRelearn[i].Valid;
         }
         private void updateStats()
         {
@@ -2768,7 +2779,7 @@ namespace PKHeX
             if (pk.Species == 0 || !pk.ChecksumValid)
             { SystemSounds.Asterisk.Play(); return; }
 
-            showLegality(pk);
+            showLegality(pk, slot < 0);
         }
         private void updateEggRNGSeed(object sender, EventArgs e)
         {

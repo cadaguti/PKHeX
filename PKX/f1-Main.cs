@@ -89,14 +89,11 @@ namespace PKHeX
             #endregion
             #region Localize & Populate Fields
             // Try and detect the language
-int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
-                        main_langnum = main_langnum.Concat(Enumerable.Range(10, lang_val.Length).Select(i => i)).ToArray();
-                        string lastTwoChars = filename.Length > 2 ? filename.Substring(filename.Length - 2) : "";
-                        int lang = filename.Length > 2 ? Array.IndexOf(lang_val, lastTwoChars) : -1;
-                        CB_MainLanguage.SelectedIndex = lang >= 0 ? main_langnum[lang] - 1 : 1;
+            int lang = Array.IndexOf(lang_val, System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+            CB_MainLanguage.SelectedIndex = lang >= 0 && lang < CB_MainLanguage.Items.Count ? lang : Array.IndexOf(lang_val, defaultlanguage);
 
             InitializeFields();
-            CB_Language.SelectedIndex = lang >= 0 && lang < 7 ? main_langnum[lang] : 0;
+          if((lang>=0)&&(lang<CB_Language.Items.Count)) CB_Language.SelectedIndex = lang;
             #endregion
             #region Load Initial File(s)
             // Load the arguments
@@ -152,7 +149,8 @@ int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
         public static string[] metBW2_00000, metBW2_30000, metBW2_40000, metBW2_60000 = { };
         public static string[] metXY_00000, metXY_30000, metXY_40000, metXY_60000 = { };
         public static string[] wallpapernames, puffs, itempouch = { };
-        public static string curlanguage = "pt"; //System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+        public static string curlanguage;
+        public static string defaultlanguage = "en";
         public static bool unicode;
         public static List<Util.cbItem> MoveDataSource, ItemDataSource, SpeciesDataSource, BallDataSource, NatureDataSource, AbilityDataSource, VersionDataSource;
 
@@ -847,28 +845,30 @@ int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
         private void InitializeStrings()
         {
             if (CB_MainLanguage.SelectedIndex < 8)
-                curlanguage = lang_val[CB_MainLanguage.SelectedIndex];
-
-            string l = curlanguage;
-            natures = Util.getStringList("natures", l);
-            types = Util.getStringList("types", l);
-            abilitylist = Util.getStringList("abilities", l);
-            movelist = Util.getStringList("moves", l);
-            itemlist = Util.getStringList("items", l);
-            characteristics = Util.getStringList("character", l);
-            specieslist = Util.getStringList("species", l);
-            wallpapernames = Util.getStringList("wallpaper", l);
-            itempouch = Util.getStringList("itempouch", l);
-            encountertypelist = Util.getStringList("encountertype", l);
-            gamelist = Util.getStringList("games", l);
-            gamelanguages = Util.getNulledStringArray(Util.getStringList("languages"));
-
-            balllist = new string[Legal.Items_Ball.Length];
-            for (int i = 0; i < balllist.Length; i++)
-                balllist[i] = itemlist[Legal.Items_Ball[i]];
-
-            if ((l != "zh") || (l == "zh" && !fieldsInitialized)) // load initial binaries
             {
+                curlanguage = lang_val[CB_MainLanguage.SelectedIndex];
+            } else {
+                curlanguage = defaultlanguage;
+            }
+
+                string l = curlanguage;
+                natures = Util.getStringList("natures", l);
+                types = Util.getStringList("types", l);
+                abilitylist = Util.getStringList("abilities", l);
+                movelist = Util.getStringList("moves", l);
+                itemlist = Util.getStringList("items", l);
+                characteristics = Util.getStringList("character", l);
+                specieslist = Util.getStringList("species", l);
+                wallpapernames = Util.getStringList("wallpaper", l);
+                itempouch = Util.getStringList("itempouch", l);
+                encountertypelist = Util.getStringList("encountertype", l);
+                gamelist = Util.getStringList("games", l);
+                gamelanguages = Util.getNulledStringArray(Util.getStringList("languages"));
+
+                balllist = new string[Legal.Items_Ball.Length];
+                for (int i = 0; i < balllist.Length; i++)
+                    balllist[i] = itemlist[Legal.Items_Ball[i]];
+
                 pokeblocks = Util.getStringList("pokeblock", l);
                 forms = Util.getStringList("forms", l);
                 memories = Util.getStringList("memories", l);
@@ -876,81 +876,80 @@ int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
                 trainingbags = Util.getStringList("trainingbag", l);
                 trainingstage = Util.getStringList("supertraining", l);
                 puffs = Util.getStringList("puff", l);
+
+                // Fix Item Names (Duplicate entries)
+                itemlist[456] += " (OLD)"; // S.S. Ticket
+                itemlist[463] += " (OLD)"; // Storage Key
+                itemlist[478] += " (OLD)"; // Basement Key
+                itemlist[626] += " (2)"; // Xtransceiver
+                itemlist[629] += " (2)"; // DNA Splicers
+                itemlist[637] += " (2)"; // Dropped Item
+                itemlist[707] += " (2)"; // Travel Trunk
+                itemlist[713] += " (2)"; // Alt Bike
+                itemlist[714] += " (2)"; // Holo Caster
+                itemlist[729] += " (1)"; // Meteorite
+                itemlist[740] += " (2)"; // Contest Costume
+                itemlist[751] += " (2)"; // Meteorite
+                itemlist[771] += " (3)"; // Meteorite
+                itemlist[772] += " (4)"; // Meteorite
+
+                // Get the Egg Name and then replace it with --- for the comboboxes.
+                eggname = specieslist[0];
+                specieslist[0] = "---";
+
+                // Get the met locations... for all of the games...
+                metHGSS_00000 = Util.getStringList("hgss_00000", l);
+                metHGSS_02000 = Util.getStringList("hgss_02000", l);
+                metHGSS_03000 = Util.getStringList("hgss_03000", l);
+
+                metBW2_00000 = Util.getStringList("bw2_00000", l);
+                metBW2_30000 = Util.getStringList("bw2_30000", l);
+                metBW2_40000 = Util.getStringList("bw2_40000", l);
+                metBW2_60000 = Util.getStringList("bw2_60000", l);
+
+                metXY_00000 = Util.getStringList("xy_00000", l);
+                metXY_30000 = Util.getStringList("xy_30000", l);
+                metXY_40000 = Util.getStringList("xy_40000", l);
+                metXY_60000 = Util.getStringList("xy_60000", l);
+
+                // Fix up some of the Location strings to make them more descriptive:
+                metHGSS_02000[1] += " (NPC)";         // Anything from an NPC
+                metHGSS_02000[2] += " (" + eggname + ")"; // Egg From Link Trade
+                metBW2_00000[36] = metBW2_00000[84] + "/" + metBW2_00000[36]; // Cold Storage in BW = PWT in BW2
+
+                // BW2 Entries from 76 to 105 are for Entralink in BW
+                for (int i = 76; i < 106; i++)
+                    metBW2_00000[i] = metBW2_00000[i] + "●";
+
+                // Localize the Poketransfer to the language (30001)
+                string[] ptransp = { "Poké Transfer", "ポケシフター", "Poké Fret", "Pokétrasporto", "Poképorter", "Pokétransfer", "포케시프터", "ポケシフター" };
+                metBW2_30000[1 - 1] = ptransp[Array.IndexOf(lang_val, curlanguage)];
+                metBW2_30000[2 - 1] += " (NPC)";              // Anything from an NPC
+                metBW2_30000[3 - 1] += " (" + eggname + ")";  // Egg From Link Trade
+
+                // Zorua/Zoroark events
+                metBW2_30000[10 - 1] = specieslist[251] + " (" + specieslist[570] + " 1)"; // Celebi's Zorua Event
+                metBW2_30000[11 - 1] = specieslist[251] + " (" + specieslist[570] + " 2)"; // Celebi's Zorua Event
+                metBW2_30000[12 - 1] = specieslist[571] + " (" + "1)"; // Zoroark
+                metBW2_30000[13 - 1] = specieslist[571] + " (" + "2)"; // Zoroark
+
+                metBW2_60000[3 - 1] += " (" + eggname + ")";  // Egg Treasure Hunter/Breeder, whatever...
+
+                metXY_00000[104] += " (X/Y)";              // Victory Road
+                metXY_00000[298] += " (OR/AS)";            // Victory Road
+                metXY_30000[0] += " (NPC)";                // Anything from an NPC
+                metXY_30000[1] += " (" + eggname + ")";    // Egg From Link Trade
+
+                // Set the first entry of a met location to "" (nothing)
+                // Fix (None) tags
+                abilitylist[0] = itemlist[0] = movelist[0] = metXY_00000[0] = metBW2_00000[0] = metHGSS_00000[0] = "(" + itemlist[0] + ")";
+
+                // Force an update to the met locations
+                origintrack = "";
+
+                if (fieldsInitialized)
+                    updateIVs(null, null); // Prompt an update for the characteristics
             }
-
-            // Fix Item Names (Duplicate entries)
-            itemlist[456] += " (OLD)"; // S.S. Ticket
-            itemlist[463] += " (OLD)"; // Storage Key
-            itemlist[478] += " (OLD)"; // Basement Key
-            itemlist[626] += " (2)"; // Xtransceiver
-            itemlist[629] += " (2)"; // DNA Splicers
-            itemlist[637] += " (2)"; // Dropped Item
-            itemlist[707] += " (2)"; // Travel Trunk
-            itemlist[713] += " (2)"; // Alt Bike
-            itemlist[714] += " (2)"; // Holo Caster
-            itemlist[729] += " (1)"; // Meteorite
-            itemlist[740] += " (2)"; // Contest Costume
-            itemlist[751] += " (2)"; // Meteorite
-            itemlist[771] += " (3)"; // Meteorite
-            itemlist[772] += " (4)"; // Meteorite
-
-            // Get the Egg Name and then replace it with --- for the comboboxes.
-            eggname = specieslist[0];
-            specieslist[0] = "---";
-
-            // Get the met locations... for all of the games...
-            metHGSS_00000 = Util.getStringList("hgss_00000", l);
-            metHGSS_02000 = Util.getStringList("hgss_02000", l);
-            metHGSS_03000 = Util.getStringList("hgss_03000", l);
-
-            metBW2_00000 = Util.getStringList("bw2_00000", l);
-            metBW2_30000 = Util.getStringList("bw2_30000", l);
-            metBW2_40000 = Util.getStringList("bw2_40000", l);
-            metBW2_60000 = Util.getStringList("bw2_60000", l);
-
-            metXY_00000 = Util.getStringList("xy_00000", l);
-            metXY_30000 = Util.getStringList("xy_30000", l);
-            metXY_40000 = Util.getStringList("xy_40000", l);
-            metXY_60000 = Util.getStringList("xy_60000", l);
-
-            // Fix up some of the Location strings to make them more descriptive:
-            metHGSS_02000[1] += " (NPC)";         // Anything from an NPC
-            metHGSS_02000[2] += " (" + eggname + ")"; // Egg From Link Trade
-            metBW2_00000[36] = metBW2_00000[84] + "/" + metBW2_00000[36]; // Cold Storage in BW = PWT in BW2
-
-            // BW2 Entries from 76 to 105 are for Entralink in BW
-            for (int i = 76; i < 106; i++)
-                metBW2_00000[i] = metBW2_00000[i] + "●";
-
-            // Localize the Poketransfer to the language (30001)
-            string[] ptransp = { "Poké Transfer", "ポケシフター", "Poké Fret", "Pokétrasporto", "Poképorter", "Pokétransfer", "포케시프터", "ポケシフター" };
-            metBW2_30000[1 - 1] = ptransp[Array.IndexOf(lang_val, curlanguage)];
-            metBW2_30000[2 - 1] += " (NPC)";              // Anything from an NPC
-            metBW2_30000[3 - 1] += " (" + eggname + ")";  // Egg From Link Trade
-
-            // Zorua/Zoroark events
-            metBW2_30000[10 - 1] = specieslist[251] + " (" + specieslist[570] + " 1)"; // Celebi's Zorua Event
-            metBW2_30000[11 - 1] = specieslist[251] + " (" + specieslist[570] + " 2)"; // Celebi's Zorua Event
-            metBW2_30000[12 - 1] = specieslist[571] + " (" + "1)"; // Zoroark
-            metBW2_30000[13 - 1] = specieslist[571] + " (" + "2)"; // Zoroark
-
-            metBW2_60000[3 - 1] += " (" + eggname + ")";  // Egg Treasure Hunter/Breeder, whatever...
-
-            metXY_00000[104] += " (X/Y)";              // Victory Road
-            metXY_00000[298] += " (OR/AS)";            // Victory Road
-            metXY_30000[0] += " (NPC)";                // Anything from an NPC
-            metXY_30000[1] += " (" + eggname + ")";    // Egg From Link Trade
-
-            // Set the first entry of a met location to "" (nothing)
-            // Fix (None) tags
-            abilitylist[0] = itemlist[0] = movelist[0] = metXY_00000[0] = metBW2_00000[0] = metHGSS_00000[0] = "(" + itemlist[0] + ")";
-
-            // Force an update to the met locations
-            origintrack = "";
-
-            if (fieldsInitialized)
-                updateIVs(null, null); // Prompt an update for the characteristics
-        }
         #endregion
 
         #region //// PKX WINDOW FUNCTIONS ////

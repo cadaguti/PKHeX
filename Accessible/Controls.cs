@@ -3,8 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 
 
-namespace PKHeX
-{
     namespace Accessibility
     {
         namespace Controls
@@ -21,4 +19,3 @@ namespace PKHeX
             }
         }
     }
-}

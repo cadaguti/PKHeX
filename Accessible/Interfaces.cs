@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Media;
+using System;
 using System.IO;
 
-namespace PKHeX
-{
     namespace Accessibility
     {
         namespace Interfaces
@@ -10,18 +9,16 @@ namespace PKHeX
             class CrySystem
             {
 
-                public CrySystem(string path, string extension, string prefix, int ascending, int descending)
+                public CrySystem(string path, string extension, int ascending, int descending)
                 {
                     this.player = new MP3Player();
                     this.resourcesPath = path;
                     this.resourcesExtension = extension;
-                    this.resourcesPrefix = prefix;
                     this.ascendingLimit = ascending;
                     this.descendingLimit = descending;
-                    this.externalResources = AreExternal();
-                }
+            }
 
-                private bool AreExternal()
+                public bool CriesExist()
                 {
                     bool exists = false;
                     if (Directory.Exists(resourcesPath))
@@ -47,15 +44,9 @@ namespace PKHeX
 
                 public void Play(int index)
                 {
-                    if (externalResources)
-                    {
-                        player.Open(resourcesPath + index + resourcesExtension);
-                    }
-                    else {
-                        player.Load((Byte[])Properties.Resources.ResourceManager.GetObject(resourcesPrefix + index.ToString()));
-                    }
+                player.Open(resourcesPath + index + resourcesExtension);
                     player.Play();
-                }
+            }
 
                 public void Stop()
                 {
@@ -67,10 +58,7 @@ namespace PKHeX
                 private string resourcesExtension;
                 private int ascendingLimit;
                 private int descendingLimit;
-                private string resourcesPrefix;
-                private bool externalResources;
-            }
+        }
 
         }
     }
-}

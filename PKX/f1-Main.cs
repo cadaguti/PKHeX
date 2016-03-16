@@ -1,5 +1,5 @@
-﻿using PKHeX.Accessibility.Controls;
-using PKHeX.Accessibility.Interfaces;
+﻿using Accessibility.Controls;
+using Accessibility.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -36,7 +36,8 @@ namespace PKHeX
                                     dcpkx1, dcpkx2, gtspkx, fusedpkx,subepkx1,subepkx2,subepkx3,
                                 };
             SlotCries = new int[SlotPictureBoxes.Length];
-            cry = new CrySystem("cries\\", ".mp3", "C", 721, 65535);
+            cry = new CrySystem("cries\\", ".mp3", 721, 65535);
+            Menu_PlayCries.Enabled = cry.CriesExist();
             relearnPB = new[] { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
             movePB = new[] { PB_WarnMove1, PB_WarnMove2, PB_WarnMove3, PB_WarnMove4 };
             defaultControlWhite = CB_Species.BackColor;
@@ -88,14 +89,14 @@ namespace PKHeX
             #endregion
             #region Localize & Populate Fields
             // Try and detect the language
-            int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
-            main_langnum = main_langnum.Concat(Enumerable.Range(10, lang_val.Length).Select(i => i)).ToArray();
-            string lastTwoChars = filename.Length > 2 ? filename.Substring(filename.Length - 2) : "";
-            int lang = filename.Length > 2 ? Array.IndexOf(lang_val, lastTwoChars) : -1;
-            CB_MainLanguage.SelectedIndex = lang >= 0 ? main_langnum[lang] - 1 : (lastTwoChars == "jp" ? 1 : 0);
+int[] main_langnum = { 1, 2, 3, 4, 5, 7, 8, 9 };
+                        main_langnum = main_langnum.Concat(Enumerable.Range(10, lang_val.Length).Select(i => i)).ToArray();
+                        string lastTwoChars = filename.Length > 2 ? filename.Substring(filename.Length - 2) : "";
+                        int lang = filename.Length > 2 ? Array.IndexOf(lang_val, lastTwoChars) : -1;
+                        CB_MainLanguage.SelectedIndex = lang >= 0 ? main_langnum[lang] - 1 : 1;
 
             InitializeFields();
-            CB_Language.SelectedIndex = lang >= 0 && lang < 7 ? main_langnum[lang] : 1;
+            CB_Language.SelectedIndex = lang >= 0 && lang < 7 ? main_langnum[lang] : 0;
             #endregion
             #region Load Initial File(s)
             // Load the arguments
@@ -151,7 +152,7 @@ namespace PKHeX
         public static string[] metBW2_00000, metBW2_30000, metBW2_40000, metBW2_60000 = { };
         public static string[] metXY_00000, metXY_30000, metXY_40000, metXY_60000 = { };
         public static string[] wallpapernames, puffs, itempouch = { };
-        public static string curlanguage = "en";
+        public static string curlanguage = "pt"; //System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
         public static bool unicode;
         public static List<Util.cbItem> MoveDataSource, ItemDataSource, SpeciesDataSource, BallDataSource, NatureDataSource, AbilityDataSource, VersionDataSource;
 
@@ -165,11 +166,11 @@ namespace PKHeX
         private LegalityAnalysis Legality = new LegalityAnalysis(new PK6());
         private static readonly Image mixedHighlight = Util.ChangeOpacity(Properties.Resources.slotSet, 0.5);
         private static readonly string BackupPath = "bak";
-        private static readonly string[] lang_val = { "en", "ja", "fr", "it", "de", "es", "ko", "zh", "pt" };
+        private static readonly string[] lang_val = { "ja", "en", "fr", "it", "de", "es", "ko", "zh", "pt" };
         private static readonly string[] main_langlist =
             {
-                "English", // ENG
                 "日本語", // JPN
+                "English", // ENG
                 "Français", // FRE
                 "Italiano", // ITA
                 "Deutsch", // GER
@@ -2925,8 +2926,10 @@ namespace PKHeX
         }
         private void playCry(object sender)
         {
+if(Menu_PlayCries.Enabled) {
             int index = getSlot(sender);
             cry.Play(SlotCries[index]);
+            }
         }
         public void setPKXBoxes()
         {

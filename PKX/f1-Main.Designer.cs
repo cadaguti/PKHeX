@@ -711,7 +711,7 @@
             this.BTN_RerollPID.Name = "BTN_RerollPID";
             this.BTN_RerollPID.Size = new System.Drawing.Size(40, 20);
             this.BTN_RerollPID.TabIndex = 3;
-            this.BTN_RerollPID.Text = "&Reroll";
+            this.BTN_RerollPID.Text = "Reroll";
             this.BTN_RerollPID.UseVisualStyleBackColor = true;
             this.BTN_RerollPID.Click += new System.EventHandler(this.updateRandomPID);
             // 

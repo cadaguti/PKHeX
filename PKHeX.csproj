@@ -1165,6 +1165,7 @@
     <None Include="Resources\snd\C720-1.mp3" />
     <None Include="Resources\snd\C721.mp3" />
     <None Include="Resources\img\valid.png" />
+    <None Include="Resources\ssl.txt" />
     <Content Include="Resources\text\de\text_Pokeblock_de.txt" />
     <Content Include="Resources\text\en\text_Pokeblock_en.txt" />
     <Content Include="Resources\text\es\text_Pokeblock_es.txt" />

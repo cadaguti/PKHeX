@@ -3,78 +3,43 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-    namespace PKHeX
+namespace Media
+{
+    public class MP3Player
     {
-        public class MP3Player
+        private string _command;
+        private bool isOpen;
+        [DllImport("winmm.dll")]
+
+        private static extern long mciSendString(string strCommand, StringBuilder strReturn, int iReturnLength, IntPtr hwndCallback);
+
+        public void Close()
         {
-            private string _command;
-            private bool isOpen;
-            [DllImport("winmm.dll")]
+            _command = "close MediaFile";
+            mciSendString(_command, null, 0, IntPtr.Zero);
+            isOpen = false;
+        }
 
-            private static extern long mciSendString(string strCommand, StringBuilder strReturn, int iReturnLength, IntPtr hwndCallback);
-            private string tmpFile;
-
-            public void Close()
+        public void Open(string sFileName)
+        {
+            if (isOpen)
             {
-                _command = "close MediaFile";
-                mciSendString(_command, null, 0, IntPtr.Zero);
-                isOpen = false;
-            }
-
-            public void Load(Byte[] data)
-            {
-            DeleteResidualTMP();
-            tmpFile = createTMP();
-                if (File.Exists(tmpFile))
-                {
-                    writeData(data);
-                    Open(tmpFile);
-                }
-            }
-
-            public void Open(string sFileName)
-            {
-if(isOpen) {
                 Close();
             }
-                _command = "open \"" + sFileName + "\" type mpegvideo alias MediaFile";
-                mciSendString(_command, null, 0, IntPtr.Zero);
-                isOpen = true;
-            }
+            _command = "open \"" + sFileName + "\" type mpegvideo alias MediaFile";
+            mciSendString(_command, null, 0, IntPtr.Zero);
+            isOpen = true;
+        }
 
-            public void Play()
-            {
-                if (isOpen)
-                {
-                    _command = "play MediaFile";
-                    mciSendString(_command, null, 0, IntPtr.Zero);
-                }
-            }
-
-            private string createTMP()
-            {
-                string fileName = string.Empty;
-                fileName = Path.GetTempFileName();
-                FileInfo fileInfo = new FileInfo(fileName);
-                fileInfo.Attributes = FileAttributes.Temporary;
-                return fileName;
-            }
-
-            private void writeData(Byte[] data)
-            {
-                FileStream streamWriter = new FileStream(tmpFile, FileMode.Open, FileAccess.Write);
-                streamWriter.Write(data, 0, data.Length);
-                streamWriter.Close();
-            }
-
-        private void DeleteResidualTMP()
+        public void Play()
         {
-            if (File.Exists(tmpFile))
+            if (isOpen)
             {
-                File.Delete(tmpFile);
+                _command = "play MediaFile";
+                mciSendString(_command, null, 0, IntPtr.Zero);
             }
         }
 
     }
 
-    }
+}

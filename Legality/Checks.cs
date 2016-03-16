@@ -59,14 +59,34 @@ namespace PKHeX
         }
         private LegalityCheck verifyNickname()
         {
-            LegalityCheck r = new LegalityCheck { Judgement = Severity.NotImplemented };
             // If the Pokémon is not nicknamed, it should match one of the language strings.
             if (pk6.Nickname.Length == 0)
+                return new LegalityCheck(Severity.Indeterminate, "Nickname is empty.");
+            if (pk6.Species > PKX.SpeciesLang[0].Length)
+                return new LegalityCheck(Severity.Indeterminate, "Species index invalid for Nickname comparison.");
+            if (pk6.IsEgg)
             {
-                r.Judgement = Severity.Indeterminate;
-                r.Comment = "Pokémon nickname is empty.";
+                if (!pk6.IsNicknamed)
+                    return new LegalityCheck(Severity.Invalid, "Eggs must be nicknamed.");
+                return PKX.SpeciesLang[pk6.Language][0] == pk6.Nickname
+                    ? new LegalityCheck(Severity.Valid, "Egg matches language Egg name.")
+                    : new LegalityCheck(Severity.Invalid, "Egg name does not match language Egg name.");
             }
-            return r;
+            string nickname = pk6.Nickname.Replace("'", "’");
+            if (pk6.IsNicknamed)
+            {
+                return PKX.SpeciesLang.Any(lang => lang.Contains(nickname))
+                    ? new LegalityCheck(Severity.Invalid, "Nickname matches another species name (+language).")
+                    : new LegalityCheck(Severity.Valid, "Nickname does not match another species name.");
+            }
+            // else
+            {
+                // Can't have another language name if it hasn't evolved.
+                return Legal.getHasEvolved(pk6) && PKX.SpeciesLang.Any(lang => lang[pk6.Species] == nickname)
+                       || PKX.SpeciesLang[pk6.Language][pk6.Species] == nickname
+                    ? new LegalityCheck(Severity.Valid, "Nickname matches species name.")
+                    : new LegalityCheck(Severity.Invalid, "Nickname does not match species name.");
+            }
         }
         private LegalityCheck verifyEVs()
         {
@@ -110,8 +130,10 @@ namespace PKHeX
 
             if (pk6.WasLink)
             {
-                if (pk6.FatefulEncounter || Legal.getLinkMoves(pk6).Length == 0) // Should NOT be Fateful, and should be in Database
-                    return new LegalityCheck(Severity.Invalid, "Not a valid Link gift.");
+                // Should NOT be Fateful, and should be in Database
+                return pk6.FatefulEncounter || Legal.getLinkMoves(pk6).Length == 0 
+                    ? new LegalityCheck(Severity.Invalid, "Not a valid Link gift.")
+                    : new LegalityCheck(Severity.Valid, "Valid Link gift.");
             }
             if (pk6.WasEvent || pk6.WasEventEgg)
             {
@@ -125,19 +147,17 @@ namespace PKHeX
                     return new LegalityCheck(Severity.Invalid, "Invalid Shedinja ball.");
                 if (pk6.Egg_Location != 0)
                     return new LegalityCheck(Severity.Invalid, "Shedinja should not have an Egg Met date/location.");
-                if (pk6.Version < 26) // XY
+                if (pk6.XY) // XY
                 {
-                    var lc = Legal.ValidMet_XY.Contains(pk6.Met_Location)
+                    return Legal.ValidMet_XY.Contains(pk6.Met_Location)
                         ? new LegalityCheck(Severity.Valid, "Valid X/Y Shedinja.")
                         : new LegalityCheck(Severity.Invalid, "Invalid X/Y location for Shedinja.");
-                    return lc;
                 }
-                if (pk6.Version < 28)
+                if (pk6.AO)
                 {
-                    var lc = Legal.ValidMet_AO.Contains(pk6.Met_Location)
+                    return Legal.ValidMet_AO.Contains(pk6.Met_Location)
                         ? new LegalityCheck(Severity.Valid, "Valid OR/AS Shedinja.")
                         : new LegalityCheck(Severity.Invalid, "Invalid OR/AS location for Shedinja.");
-                    return lc;
                 }
                 return new LegalityCheck(Severity.Invalid, "Invalid Shedinja encounter.");
             }
@@ -148,24 +168,21 @@ namespace PKHeX
                     return new LegalityCheck(Severity.Invalid, "Invalid met level, expected 1.");
                 if (pk6.IsEgg)
                 {
-                    var lc = pk6.Met_Location == 0
+                    return pk6.Met_Location == 0
                         ? new LegalityCheck(Severity.Valid, "Valid un-hatched egg.")
                         : new LegalityCheck(Severity.Invalid, "Invalid location for un-hatched egg (expected ID:0)");
-                    return lc;
                 }
-                if (pk6.Version < 26) // XY
+                if (pk6.XY)
                 {
-                    var lc = Legal.ValidMet_XY.Contains(pk6.Met_Location)
+                    return Legal.ValidMet_XY.Contains(pk6.Met_Location)
                         ? new LegalityCheck(Severity.Valid, "Valid X/Y hatched egg.")
                         : new LegalityCheck(Severity.Invalid, "Invalid X/Y location for hatched egg.");
-                    return lc;
                 }
-                if (pk6.Version < 28)
+                if (pk6.AO)
                 {
-                    var lc = Legal.ValidMet_AO.Contains(pk6.Met_Location)
+                    return Legal.ValidMet_AO.Contains(pk6.Met_Location)
                         ? new LegalityCheck(Severity.Valid, "Valid OR/AS hatched egg.")
                         : new LegalityCheck(Severity.Invalid, "Invalid OR/AS location for hatched egg.");
-                    return lc;
                 }
                 return new LegalityCheck(Severity.Invalid, "Invalid location for hatched egg.");
             }
@@ -176,16 +193,28 @@ namespace PKHeX
 
             int FriendSafari = Legal.getFriendSafariValid(pk6);
             if (FriendSafari > 0)
+            {
+                if (pk6.Species == 670 || pk6.Species == 671) // Floette
+                    if (pk6.AltForm % 2 != 0) // 0/2/4
+                        return new LegalityCheck(Severity.Invalid, "Friend Safari: Not valid color.");
+                else if (pk6.Species == 710 || pk6.Species == 711) // Pumpkaboo
+                    if (pk6.AltForm != 1) // Average
+                        return new LegalityCheck(Severity.Invalid, "Friend Safari: Not average sized.");
+                else if (pk6.Species == 586) // Sawsbuck
+                    if (pk6.AltForm != 0)
+                        return new LegalityCheck(Severity.Invalid, "Friend Safari: Not Spring form.");
+
                 return new LegalityCheck(Severity.Valid, "Valid friend safari encounter.");
+            }
 
             // Not Implemented: In-Game Trades
-
-            if (Legal.getDexNavValid(pk6) || Legal.getWildEncounterValid(pk6))
+            if (Legal.getDexNavValid(pk6))
+                return new LegalityCheck(Severity.Valid, "Valid (DexNav) encounter at location.");
+            if (Legal.getWildEncounterValid(pk6))
             {
-                var lc = pk6.AbilityNumber != 4
+                return pk6.AbilityNumber != 4
                     ? new LegalityCheck(Severity.Valid, "Valid encounter at location.")
                     : new LegalityCheck(Severity.Invalid, "Hidden ability on valid encounter.");
-                return lc;
             }
             return new LegalityCheck(Severity.Invalid, "Not a valid encounter.");
         }

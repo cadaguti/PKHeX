@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-    namespace Accessibility
+namespace Accessibility
     {
         namespace Interfaces
         {
@@ -42,16 +42,21 @@ using System.IO;
                     return exists;
                 }
 
-                public void Play(int index)
+            public void Play(string cry)
+            {
+                if (!File.Exists(resourcesPath + cry + resourcesExtension))
                 {
-                player.Open(resourcesPath + index + resourcesExtension);
-                    player.Play();
+                    cry = cry.Substring(0, cry.IndexOf("_"));
+                }
+                string filename = resourcesPath + cry + resourcesExtension;
+                player.Open(filename);
+                player.Play();
             }
 
-                public void Stop()
+            public void Stop()
                 {
                     player.Close();
-                }
+            }
 
                 private MP3Player player;
                 private string resourcesPath;

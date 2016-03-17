@@ -35,7 +35,7 @@ namespace PKHeX
 
                                     dcpkx1, dcpkx2, gtspkx, fusedpkx,subepkx1,subepkx2,subepkx3,
                                 };
-            SlotCries = new int[SlotPictureBoxes.Length];
+            SlotCries = new string[SlotPictureBoxes.Length];
             cry = new CrySystem("cries\\", ".mp3", 721, 65535);
             Menu_PlayCries.Enabled = cry.CriesExist();
             relearnPB = new[] { PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4 };
@@ -92,11 +92,12 @@ namespace PKHeX
             string lastTwoChars = filename.Length > 2 ? filename.Substring(filename.Length - 2) : "";
             int filenameLang = Array.IndexOf(lang_val, lastTwoChars);
             int systemLang = Array.IndexOf(lang_val, System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
-            int lang = filenameLang >= 0 && filenameLang < CB_MainLanguage.Items.Count ? filenameLang : systemLang >= 0 && systemLang < CB_MainLanguage.Items.Count ? systemLang : Array.IndexOf(lang_val, defaultlanguage);
+            int defaultLang = Array.IndexOf(lang_val, defaultlanguage);
+            int lang = filenameLang >= 0 && filenameLang < CB_MainLanguage.Items.Count ? filenameLang : systemLang >= 0 && systemLang < CB_MainLanguage.Items.Count ? systemLang : defaultLang;
             CB_MainLanguage.SelectedIndex = lang;
 
             InitializeFields();
-            if ((lang >= 0) && (lang < CB_Language.Items.Count)) CB_Language.SelectedIndex = lang;
+            CB_Language.SelectedIndex = lang >= 0 && lang < CB_Language.Items.Count ? lang : defaultLang;
             #endregion
             #region Load Initial File(s)
             // Load the arguments
@@ -181,10 +182,12 @@ namespace PKHeX
                 "Português", // Portuguese
             };
         private static string origintrack;
+        private static string strEmptySlot = "Empty";
+        private static string strBad = "Bad Egg";
         private readonly AccessiblePictureBox[] SlotPictureBoxes;
         private readonly PictureBox[] movePB, relearnPB;
         private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
-        private readonly  int[] SlotCries;
+        private readonly string[] SlotCries;
         private readonly  CrySystem cry;
         #endregion
 
@@ -2744,7 +2747,7 @@ namespace PKHeX
             else return;
 
             SlotPictureBoxes[slot].Image = null;
-            SlotCries[slot] = 0;
+            SlotCries[slot] = "0";
             getSlotColor(slot, Properties.Resources.slotDel);
         }
         private void clickClone(object sender, EventArgs e)
@@ -3022,35 +3025,41 @@ if(Menu_PlayCries.Enabled) {
             }
             CB_BoxSelect.SelectedIndex = selectedbox; // restore selected box
         }
-        private void getQuickFiller(AccessiblePictureBox pb, int cryIndex = -1, PK6 pk = null)
+        private void getQuickFiller(PictureBox pb, int cryIndex = -1, PK6 pk = null)
         {
             if (!fieldsInitialized) return;
             pk = pk ?? preparepkx(false); // don't perform control loss click
 
             if (pb == dragout) mnuLQR.Enabled = pk.Species != 0; // Species
-            else SlotCries[cryIndex] = pk.Species;
-            pb.Image = pk.Sprite;
+            else SlotCries[cryIndex] = pk.Species.ToString();
+                pb.Image = pk.Sprite;
         }
         private void getSlotFiller(int offset, PictureBox pb, int cryIndex)
         {
             if (SAV.getData(offset, PK6.SIZE_STORED).SequenceEqual(new byte[PK6.SIZE_STORED]))
             {
                 // 00s present in slot.
-                pb.Image = null; SlotCries[cryIndex] = 0;
+                pb.Image = null;
                 pb.BackColor = Color.Transparent;
+                pb.AccessibleName = strEmptySlot;
+                SlotCries[cryIndex] = "0";
                 return;
             }
             PK6 p = SAV.getPK6Stored(offset);
             if (p.Sanity != 0 || !p.ChecksumValid) // Invalid
             {
                 // Bad Egg present in slot.
-                pb.Image = null; SlotCries[cryIndex] = 65535;
+                pb.Image = null;
                 pb.BackColor = Color.Red;
+                pb.AccessibleName = strBad;
+                SlotCries[cryIndex] = "65535";
                 return;
             }
             // Something stored in slot. Only display if species is valid.
-            pb.Image = p.Species == 0 ? null : p.Sprite; SlotCries[cryIndex] = p.Species;
+            pb.Image = p.Species == 0 ? null : p.Sprite;
             pb.BackColor = Color.Transparent;
+            pb.AccessibleName = p.Species == 0 ? strEmptySlot : p.Nickname;
+            SlotCries[cryIndex] = p.Species.ToString() + "_" + p.AltForm.ToString();
         }
         private void getSlotColor(int slot, Image color)
         {

@@ -89,11 +89,14 @@ namespace PKHeX
             #endregion
             #region Localize & Populate Fields
             // Try and detect the language
-            int lang = Array.IndexOf(lang_val, System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
-            CB_MainLanguage.SelectedIndex = lang >= 0 && lang < CB_MainLanguage.Items.Count ? lang : Array.IndexOf(lang_val, defaultlanguage);
+            string lastTwoChars = filename.Length > 2 ? filename.Substring(filename.Length - 2) : "";
+            int filenameLang = Array.IndexOf(lang_val, lastTwoChars);
+            int systemLang = Array.IndexOf(lang_val, System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+            int lang = filenameLang >= 0 && filenameLang < CB_MainLanguage.Items.Count ? filenameLang : systemLang >= 0 && systemLang < CB_MainLanguage.Items.Count ? systemLang : Array.IndexOf(lang_val, defaultlanguage);
+            CB_MainLanguage.SelectedIndex = lang;
 
             InitializeFields();
-          if((lang>=0)&&(lang<CB_Language.Items.Count)) CB_Language.SelectedIndex = lang;
+            if ((lang >= 0) && (lang < CB_Language.Items.Count)) CB_Language.SelectedIndex = lang;
             #endregion
             #region Load Initial File(s)
             // Load the arguments

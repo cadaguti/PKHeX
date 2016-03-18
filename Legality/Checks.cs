@@ -15,7 +15,7 @@ namespace PKHeX
     public class LegalityCheck
     {
         public Severity Judgement = Severity.Valid;
-        public string Comment = "Valid";
+        public readonly string Comment = "Valid";
         public bool Valid => Judgement >= Severity.Fishy;
 
         public LegalityCheck() { }
@@ -141,26 +141,6 @@ namespace PKHeX
                     ? new LegalityCheck(Severity.Valid, $"Matches #{MatchedWC6.CardID.ToString("0000")} ({MatchedWC6.CardTitle})") 
                     : new LegalityCheck(Severity.Invalid, "Not a valid Wonder Card gift.");
             }
-            if (pk6.Species == 292) // Shedinja
-            {
-                if (pk6.Ball != 4)
-                    return new LegalityCheck(Severity.Invalid, "Invalid Shedinja ball.");
-                if (pk6.Egg_Location != 0)
-                    return new LegalityCheck(Severity.Invalid, "Shedinja should not have an Egg Met date/location.");
-                if (pk6.XY) // XY
-                {
-                    return Legal.ValidMet_XY.Contains(pk6.Met_Location)
-                        ? new LegalityCheck(Severity.Valid, "Valid X/Y Shedinja.")
-                        : new LegalityCheck(Severity.Invalid, "Invalid X/Y location for Shedinja.");
-                }
-                if (pk6.AO)
-                {
-                    return Legal.ValidMet_AO.Contains(pk6.Met_Location)
-                        ? new LegalityCheck(Severity.Valid, "Valid OR/AS Shedinja.")
-                        : new LegalityCheck(Severity.Invalid, "Invalid OR/AS location for Shedinja.");
-                }
-                return new LegalityCheck(Severity.Invalid, "Invalid Shedinja encounter.");
-            }
             if (pk6.WasEgg)
             {
                 // Check Hatch Locations
@@ -212,8 +192,7 @@ namespace PKHeX
 
                 return new LegalityCheck(Severity.Valid, "Valid friend safari encounter.");
             }
-
-            // Not Implemented: In-Game Trades
+            
             if (Legal.getDexNavValid(pk6))
                 return new LegalityCheck(Severity.Valid, "Valid (DexNav) encounter at location.");
             if (Legal.getWildEncounterValid(pk6))
@@ -221,6 +200,12 @@ namespace PKHeX
                 return pk6.AbilityNumber != 4
                     ? new LegalityCheck(Severity.Valid, "Valid encounter at location.")
                     : new LegalityCheck(Severity.Invalid, "Hidden ability on valid encounter.");
+            }
+            EncounterTrade t = Legal.getIngameTrade(pk6);
+            if (t != null)
+            {
+                EncounterMatch = t; // Check in individual methods
+                return new LegalityCheck(Severity.Valid, "Valid ingame trade.");
             }
             return new LegalityCheck(Severity.Invalid, "Not a valid encounter.");
         }

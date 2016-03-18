@@ -17,16 +17,77 @@ namespace PKHeX
         private static readonly Evolutions[] Evolves = Evolutions.getArray(Util.unpackMini(Properties.Resources.evos_ao, "ao"));
         private static readonly EncounterArea[] SlotsA = EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_a, "ao"));
         private static readonly EncounterArea[] SlotsO = EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_o, "ao"));
-        private static readonly EncounterArea[] SlotsX = EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_x, "xy"));
-        private static readonly EncounterArea[] SlotsY = EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_y, "xy"));
-        private static readonly EncounterArea[] DexNavA = getDexNavSlots(SlotsA, 65);
+        #region XY Alt Slots
+        private static readonly EncounterArea[] SlotsXYAlt = 
+        {
+            new EncounterArea {
+                Location = 104, // Victory Road
+                Slots = new[]
+                {
+	                // Drops
+	                new EncounterSlot { Species = 075, LevelMin = 57, LevelMax = 57, Form = 0 }, // Graveler
+	                new EncounterSlot { Species = 168, LevelMin = 58, LevelMax = 59, Form = 0 }, // Ariados
+	                new EncounterSlot { Species = 714, LevelMin = 57, LevelMax = 59, Form = 0 }, // Noibat
+	
+	                // Swoops
+	                new EncounterSlot { Species = 022, LevelMin = 57, LevelMax = 59, Form = 0 }, // Fearow
+	                new EncounterSlot { Species = 227, LevelMin = 57, LevelMax = 59, Form = 0 }, // Skarmory
+	                new EncounterSlot { Species = 635, LevelMin = 59, LevelMax = 59, Form = 0 }, // Hydreigon
+                },},
+            new EncounterArea {
+                    Location = 34, // Route 6
+                Slots = new[]
+                {
+	                // Rustling Bush
+	                new EncounterSlot { Species = 543, LevelMin = 10, LevelMax = 12, Form = 0 }, // Venipede
+                    new EncounterSlot { Species = 531, LevelMin = 10, LevelMax = 12, Form = 0 }, // Audino
+                },},
+
+            new EncounterArea { Location = 88, // Route 18
+                Slots = new[]
+                {
+	                // Rustling Bush
+	                new EncounterSlot { Species = 632, LevelMin = 44, LevelMax = 46, Form = 0 }, // Durant
+                    new EncounterSlot { Species = 631, LevelMin = 45, LevelMax = 45, Form = 0 }, // Heatmor
+                },},
+
+            new EncounterArea { Location = 132, // Glittering Cave
+                Slots = new[]
+                {
+	                // Drops
+	                new EncounterSlot { Species = 527, LevelMin = 15, LevelMax = 17, Form = 0 }, // Woobat
+                    new EncounterSlot { Species = 597, LevelMin = 15, LevelMax = 17, Form = 0 }, // Ferroseed
+                },},
+
+            new EncounterArea { Location = 56, // Reflection Cave
+                Slots = new[]
+                {
+	                // Drops
+	                new EncounterSlot { Species = 527, LevelMin = 21, LevelMax = 23, Form = 0 }, // Woobat
+                    new EncounterSlot { Species = 597, LevelMin = 21, LevelMax = 23, Form = 0 }, // Ferroseed
+                },},
+        };
+        #endregion
+        private static readonly EncounterArea[] SlotsX = addXYAltTiles(EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_x, "xy")), SlotsXYAlt);
+        private static readonly EncounterArea[] SlotsY = addXYAltTiles(EncounterArea.getArray(Util.unpackMini(Properties.Resources.encounter_y, "xy")), SlotsXYAlt);
+        private static readonly EncounterArea[] DexNavA = getDexNavSlots(SlotsA, 32);
         private static readonly EncounterArea[] DexNavO = getDexNavSlots(SlotsO, 32);
+        private static EncounterArea[] addXYAltTiles(EncounterArea[] GameSlots, EncounterArea[] SpecialSlots)
+        {
+            foreach (EncounterArea g in GameSlots)
+            {
+                EncounterArea slots = SpecialSlots.FirstOrDefault(l => l.Location == g.Location);
+                if (slots != null)
+                    g.Slots = g.Slots.Concat(slots.Slots).ToArray();
+            }
+            return GameSlots;
+        }
         private static EncounterArea[] getDexNavSlots(EncounterArea[] GameSlots, int smashSlot)
         {
             EncounterArea[] eA = new EncounterArea[GameSlots.Length];
             for (int i = 0; i < eA.Length; i++)
             {
-                eA[i] = GameSlots[i];
+                eA[i] = new EncounterArea {Location = GameSlots[i].Location, Slots = GameSlots[i].Slots};
                 eA[i].Slots = eA[i].Slots.Take(smashSlot).Concat(eA[i].Slots.Skip(smashSlot+5)).ToArray(); // Skip 5 Rock Smash slots.
             }
             return eA;
@@ -211,6 +272,8 @@ namespace PKHeX
 
         private static int getBaseSpecies(PK6 pk6, int skipOption = 0)
         {
+            if (pk6.Species == 292)
+                return 290;
             DexLevel[] evos = Evolves[pk6.Species].Evos;
             switch (skipOption)
             {
@@ -268,7 +331,7 @@ namespace PKHeX
 
             // Filter for Met Level
             slots = DexNav
-                ? slots.Where(slot => slot.LevelMin <= pk6.Met_Level && pk6.Met_Level <= slot.LevelMin + 13) // DexNav Boost Range ??
+                ? slots.Where(slot => slot.LevelMin <= pk6.Met_Level && pk6.Met_Level <= slot.LevelMax + 13) // DexNav Boost Range ??
                 : slots.Where(slot => slot.LevelMin == pk6.Met_Level); // Non-boosted Level
 
             // Filter for Form Specific
@@ -295,9 +358,15 @@ namespace PKHeX
         }
         private static IEnumerable<DexLevel> getValidPreEvolutions(PK6 pk6)
         {
-            var evos = Evolves[pk6.Species].Evos;
-            List<DexLevel> dl = new List<DexLevel> { new DexLevel { Species = pk6.Species, Level = pk6.CurrentLevel } };
             int lvl = pk6.CurrentLevel;
+            if (pk6.Species == 292 && pk6.Met_Level + 1 <= lvl && lvl >= 20)
+                return new List<DexLevel>
+                {
+                    new DexLevel { Species = 292, Level = lvl },
+                    new DexLevel { Species = 290, Level = lvl-1 }
+                };
+            var evos = Evolves[pk6.Species].Evos;
+            List<DexLevel> dl = new List<DexLevel> { new DexLevel { Species = pk6.Species, Level = lvl } };
             foreach (DexLevel evo in evos)
             {
                 if (lvl >= pk6.Met_Level && lvl >= evo.Level)
@@ -494,11 +563,24 @@ namespace PKHeX
         #region Static Encounter/Gift Tables
         private static readonly EncounterTrade[] TradeGift_XY =
         {
-            new EncounterTrade { Species = 296, Ability = 2, Gender = 0, TID = 30724, Nature = Nature.Brave, },
+            new EncounterTrade { Species = 129, Level = 5, Ability = 1, Gender = 0, TID = 44285, Nature = Nature.Adamant, }, // Magikarp
+            new EncounterTrade { Species = 133, Level = 5, Ability = 1, Gender = 1, TID = 29294, Nature = Nature.Docile, }, // Eevee
+
+            new EncounterTrade { Species = 83, Level = 10, Ability = 1, Gender = 0, TID = 00185, Nature = Nature.Jolly, IVs = new[] {-1, -1, -1, 31, -1, -1}, }, // Farfetch'd
+            new EncounterTrade { Species = 208, Level = 20, Ability = 1, Gender = 1, TID = 19250, Nature = Nature.Impish, IVs = new[] {-1, -1, 31, -1, -1, -1}, }, // Steelix
+            new EncounterTrade { Species = 625, Level = 50, Ability = 1, Gender = 0, TID = 03447, Nature = Nature.Adamant, IVs = new[] {-1, 31, -1, -1, -1, -1}, }, // Bisharp
+
+            new EncounterTrade { Species = 656, Level = 5, Ability = 1, Gender = 0, TID = 00037, Nature = Nature.Jolly, IVs = new[] {20, 20, 20, 31, 20, 20}, }, // Froakie
+            new EncounterTrade { Species = 650, Level = 5, Ability = 1, Gender = 0, TID = 00037, Nature = Nature.Adamant, IVs = new[] {20, 31, 20, 20, 20, 20}, }, // Chespin
+            new EncounterTrade { Species = 653, Level = 5, Ability = 1, Gender = 0, TID = 00037, Nature = Nature.Modest, IVs = new[] {20, 20, 20, 20, 31, 20}, }, // Fennekin
+
+            new EncounterTrade { Species = 280, Level = 5, Ability = 1, Gender = 1, TID = 37110, Nature = Nature.Modest, IVs = new[] {20, 20, 20, 31, 31, 20}, }, // Ralts
         };
         private static readonly EncounterTrade[] TradeGift_AO =
         {
-            new EncounterTrade { Species = 296, Ability = 2, Gender = 0, TID = 30724, Nature = Nature.Brave, },
+            new EncounterTrade { Species = 296, Level = 9, Ability = 2, Gender = 0, TID = 30724, Nature = Nature.Brave, IVs = new[] {-1, 31, -1, -1, -1, -1}, }, // Makuhita
+            new EncounterTrade { Species = 300, Level = 25, Ability = 1, Gender = 1, TID = 03239, Nature = Nature.Naughty, IVs = new[] {-1, -1, -1, 31, -1, -1}, }, // Skitty
+            new EncounterTrade { Species = 222, Level = 50, Ability = 4, Gender = 1, TID = 00325, Nature = Nature.Calm, IVs = new[] {31, -1, -1, -1, -1, 31}, }, // Corsola
         };
         #endregion
     }

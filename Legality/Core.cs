@@ -102,7 +102,7 @@ namespace PKHeX
         {
             List<int> r = new List<int> {0};
             int species = pk6.Species;
-            if (species == 386 || species == 492) // Deoxys & Shaymin
+            if (species == 386 || species == 492 || species == 487) // Deoxys & Shaymin & Giratina
             {
                 int formcount = PersonalAO[species].FormeCount;
                 for (int i = 0; i < formcount; i++)
@@ -201,8 +201,7 @@ namespace PKHeX
         }
         internal static int getFriendSafariValid(PK6 pk6)
         {
-            int vers = pk6.Version;
-            if (vers != 24 && vers != 25)
+            if (!pk6.XY)
                 return -1;
             IEnumerable<DexLevel> vs = getValidPreEvolutions(pk6);
             foreach (DexLevel d in vs.Where(d => FriendSafari.Contains(d.Species) && d.Level >= 30))
@@ -215,7 +214,7 @@ namespace PKHeX
             int species = getBaseSpecies(pk6, skipOption);
             if (gameSource == -1)
             {
-                if (pk6.Version == 24 || pk6.Version == 25)
+                if (pk6.XY)
                     return LevelUpXY[species].getMoves(1);
                 // if (pk6.Version == 26 || pk6.Version == 27)
                     return LevelUpAO[species].getMoves(1);
@@ -341,7 +340,7 @@ namespace PKHeX
             // Filter for Met Level
             int lvl = pk6.Met_Level;
             slots = DexNav
-                ? slots.Where(slot => slot.LevelMin <= lvl && lvl <= slot.LevelMax + 13) // DexNav Boost Range ??
+                ? slots.Where(slot => slot.LevelMin <= lvl && lvl <= slot.LevelMax + 30) // DexNav Boost Range ??
                 : slots.Where(slot => slot.LevelMin <= lvl && lvl <= slot.LevelMax); // Non-boosted Level
 
             // Filter for Form Specific
@@ -380,7 +379,8 @@ namespace PKHeX
             foreach (DexLevel evo in evos)
             {
                 if (lvl >= pk6.Met_Level && lvl >= evo.Level)
-                    dl.Add(new DexLevel { Species = evo.Species, Level = lvl });
+                    dl.Add(new DexLevel {Species = evo.Species, Level = lvl});
+                else break;
                 if (evo.Level > 1) // Level Up (from previous level)
                     lvl--;
             }
@@ -410,6 +410,9 @@ namespace PKHeX
                     if (pkAO.ORASTutors[i][b])
                         moves.Add(Tutors_AO[i][b]);
 
+            // Keldeo - Secret Sword
+            if (species == 647)
+                moves.Add(548);
             return moves;
         }
         private static IEnumerable<int> getMachineMoves(int species, int formnum)
@@ -437,6 +440,11 @@ namespace PKHeX
             new EncounterStatic { Species = 131, Level = 32, Location = 62, Nature = Nature.Docile, IVs = new[] {31, 20, 20, 20, 20, 20}, Gift = true }, // Lapras
             
             new EncounterStatic { Species = 143, Level = 15, Location = 38 }, // Snorlax
+            new EncounterStatic { Species = 568, Level = 35, Location = 142 }, // Trubbish
+            new EncounterStatic { Species = 569, Level = 36, Location = 142 }, // Garbodor
+            new EncounterStatic { Species = 569, Level = 37, Location = 142 }, // Garbodor
+            new EncounterStatic { Species = 569, Level = 38, Location = 142 }, // Garbodor
+            new EncounterStatic { Species = 479, Level = 38, Location = 142 }, // Rotom
             
             new EncounterStatic { Species = 716, Level = 50, Location = 138, Version = GameVersion.X, Shiny = false }, // Xerneas
             new EncounterStatic { Species = 717, Level = 50, Location = 138, Version = GameVersion.Y, Shiny = false }, // Yveltal
@@ -532,6 +540,15 @@ namespace PKHeX
             
             new EncounterStatic { Species = 100, Level = 20, Location = 302 }, // Voltorb @ Route 119
             new EncounterStatic { Species = 442, Level = 50, Location = 304 }, // Spiritomb @ Route 120
+
+            // Soaring in the Sky
+            new EncounterStatic { Species = 198, Level = 45, Location = 348 }, // Murkrow
+            new EncounterStatic { Species = 276, Level = 40, Location = 348 }, // Taillow
+            new EncounterStatic { Species = 278, Level = 40, Location = 348 }, // Wingull
+            new EncounterStatic { Species = 279, Level = 40, Location = 348 }, // Pelipper
+            new EncounterStatic { Species = 333, Level = 40, Location = 348 }, // Swablu
+            new EncounterStatic { Species = 425, Level = 45, Location = 348 }, // Drifloon
+            new EncounterStatic { Species = 628, Level = 45, Location = 348 }, // Braviary
         };
         #endregion
         private static readonly EncounterStatic[] StaticX = getSpecial(GameVersion.X);
@@ -570,7 +587,7 @@ namespace PKHeX
             Util.getStringList("tradeao", "ko"), // 8
         };
 
-        #region Static Encounter/Gift Tables
+        #region Trade Tables
         private static readonly EncounterTrade[] TradeGift_XY =
         {
             new EncounterTrade { Species = 129, Level = 5, Ability = 1, Gender = 0, TID = 44285, Nature = Nature.Adamant, }, // Magikarp

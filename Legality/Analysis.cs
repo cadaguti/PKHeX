@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace PKHeX
@@ -6,12 +7,13 @@ namespace PKHeX
     public partial class LegalityAnalysis
     {
         private readonly PK6 pk6;
-        private WC6 MatchedWC6;
         private object EncounterMatch;
-        private LegalityCheck ECPID, Nickname, IDs, IVs, EVs, Encounter, Level;
+        private Type EncounterType;
+        private LegalityCheck ECPID, Nickname, IDs, IVs, EVs, Encounter, Level, Ribbons, Ability, Ball, HandlerMemories;
 
         public bool Valid = true;
         public bool SecondaryChecked;
+        public int[] RelearnBase;
         public LegalityCheck[] vMoves = new LegalityCheck[4];
         public LegalityCheck[] vRelearn = new LegalityCheck[4];
         public string Report => getLegalityReport();
@@ -27,6 +29,7 @@ namespace PKHeX
 
         public void updateRelearnLegality()
         {
+            RelearnBase = null;
             try { vRelearn = verifyRelearn(); }
             catch { for (int i = 0; i < 4; i++) vRelearn[i] = new LegalityCheck(Severity.Invalid, "Internal error."); }
             SecondaryChecked = false;
@@ -41,12 +44,17 @@ namespace PKHeX
         private void updateChecks()
         {
             Encounter = verifyEncounter();
+            EncounterType = EncounterMatch?.GetType();
             ECPID = verifyECPID();
             Nickname = verifyNickname();
             IDs = verifyID();
             IVs = verifyIVs();
             EVs = verifyEVs();
             Level = verifyLevel();
+            Ribbons = verifyRibbons();
+            Ability = verifyAbility();
+            Ball = verifyBall();
+            HandlerMemories = verifyHandlerMemories();
             SecondaryChecked = true;
         }
         private string getLegalityReport()
@@ -54,7 +62,7 @@ namespace PKHeX
             if (!pk6.Gen6)
                 return "Analysis only available for Pokémon that originate from X/Y & OR/AS.";
             
-            var chks = new[] { ECPID, Nickname, IVs, EVs, IDs, Encounter, Level};
+            var chks = new[] { ECPID, Nickname, IVs, EVs, IDs, Encounter, Level, Ribbons, Ability, Ball, HandlerMemories };
 
             string r = "";
             for (int i = 0; i < 4; i++)
@@ -72,6 +80,25 @@ namespace PKHeX
             r += chks.Where(chk => !chk.Valid).Aggregate("", (current, chk) => current + $"{chk.Judgement}: {chk.Comment}{Environment.NewLine}");
 
             return r;
+        }
+
+        public int[] getSuggestedRelearn()
+        {
+            if (RelearnBase == null)
+                return new int[4];
+
+            if (!pk6.WasEgg)
+                return RelearnBase;
+
+            List<int> window = new List<int>(RelearnBase);
+
+            for (int i = 0; i < 4; i++)
+                if (!vMoves[i].Valid || vMoves[i].Flag)
+                    window.Add(pk6.Moves[i]);
+
+            if (window.Count < 4)
+                window.AddRange(new int[4 - window.Count]);
+            return window.Skip(window.Count - 4).Take(4).ToArray();
         }
     }
 }

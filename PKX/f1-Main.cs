@@ -86,6 +86,12 @@ namespace PKHeX
             TB_Level.Visible = CB_Ability.Visible = !HaX;
             // Load WC6 folder to legality
             refreshWC6DB();
+
+            Menu_Modify.DropDown.Closing += (sender, e) =>
+            {
+                if (e.CloseReason == ToolStripDropDownCloseReason.ItemClicked)
+                    e.Cancel = true;
+            };
             #endregion
             #region Localize & Populate Fields
             // Try and detect the language
@@ -108,8 +114,6 @@ namespace PKHeX
                 foreach (string arg in args.Skip(1).Where(a => a.Length > 4))
                     openQuick(arg);
             }
-            else if (path3DS != null && File.Exists(Path.Combine(Path.GetPathRoot(path3DS), "ramsav.bin")))
-                openQuick(Path.Combine(Path.GetPathRoot(path3DS), "ramsav.bin"));
             else if (path3DS != null && File.Exists(Path.Combine(Path.GetPathRoot(path3DS), "SaveDataBackup", "main")))
                 openQuick(Path.Combine(Path.GetPathRoot(path3DS), "SaveDataBackup", "main"));
             else if (pathSDF != null)
@@ -1454,13 +1458,21 @@ namespace PKHeX
         }
         private void clickMoves(object sender, EventArgs e)
         {
-            if (DialogResult.Yes != Util.Prompt(MessageBoxButtons.YesNo, "Copy current moves to Relearn Moves?"))
+            updateLegality();
+            int[] m = Legality.getSuggestedRelearn();
+            string[] s = new string[4];
+            for (int i = 0; i < 4; i++)
+                s[i] = movelist[m[i]];
+
+            string r = string.Join(Environment.NewLine, s);
+            if (DialogResult.Yes != Util.Prompt(MessageBoxButtons.YesNo, "Apply suggested relearn moves?", r))
                 return;
 
-            CB_RelearnMove1.SelectedIndex = CB_Move1.SelectedIndex > -1 ? CB_Move1.SelectedIndex : 0;
-            CB_RelearnMove2.SelectedIndex = CB_Move2.SelectedIndex > -1 ? CB_Move2.SelectedIndex : 0;
-            CB_RelearnMove3.SelectedIndex = CB_Move3.SelectedIndex > -1 ? CB_Move3.SelectedIndex : 0;
-            CB_RelearnMove4.SelectedIndex = CB_Move4.SelectedIndex > -1 ? CB_Move4.SelectedIndex : 0;
+            CB_RelearnMove1.SelectedValue = m[0];
+            CB_RelearnMove2.SelectedValue = m[1];
+            CB_RelearnMove3.SelectedValue = m[2];
+            CB_RelearnMove4.SelectedValue = m[3];
+            updateLegality();
         }
         // Prompted Updates of PKX Functions // 
         private bool changingFields;
@@ -2172,9 +2184,9 @@ namespace PKHeX
         private void showLegality(PK6 pk, bool tabs)
         {
             LegalityAnalysis la = new LegalityAnalysis(pk);
-            Util.Alert(la.Report); // temp
             if (tabs)
                 updateLegality(la);
+            Util.Alert(la.Report); // temp
         }
         private void updateLegality(LegalityAnalysis la = null)
         {
@@ -3034,6 +3046,8 @@ if(Menu_PlayCries.Enabled) {
             if (pb == dragout) mnuLQR.Enabled = pk.Species != 0; // Species
             else SlotCries[cryIndex] = pk.Species.ToString();
                 pb.Image = pk.Sprite;
+            if (pb.BackColor == Color.Red)
+                pb.BackColor = Color.Transparent;
         }
         private void getSlotFiller(int offset, PictureBox pb, int cryIndex)
         {
@@ -3378,9 +3392,7 @@ if(Menu_PlayCries.Enabled) {
             pathSDF = Util.GetSDFLocation();
             path3DS = Util.get3DSLocation();
             string path = null;
-
-            if (path3DS != null && File.Exists(Path.Combine(Path.GetPathRoot(path3DS), "ramsav.bin")))
-                path = Path.Combine(Path.GetPathRoot(path3DS), "ramsav.bin");
+            
             if (path3DS != null && Directory.Exists(Path.Combine(path3DS, "SaveDataBackup")) && ModifierKeys != Keys.Control)
                 path = Path.Combine(Path.GetPathRoot(path3DS), "SaveDataBackup", "main");
             else if (pathSDF != null && ModifierKeys != Keys.Shift) // if we have a result
@@ -3459,7 +3471,10 @@ if(Menu_PlayCries.Checked) playCry(sender);
                         if (!PKX.verifychk(input)) Util.Alert("Invalid File Loaded.", "Checksum is not valid.");
                         try // to convert past gen pkm
                         {
-                            SAV.setPK6Stored(Converter.ConvertPKMtoPK6(input), offset);
+                            PK6 pk = Converter.ConvertPKMtoPK6(input);
+                            SAV.setPK6Stored(pk, offset);
+                            getQuickFiller(SlotPictureBoxes[slot], pk);
+                            getSlotColor(slot, Properties.Resources.slotSet);
                         }
                         catch
                         { Util.Error("Attempted to load previous generation PKM.", "Conversion failed."); }

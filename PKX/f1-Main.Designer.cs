@@ -4369,13 +4369,7 @@
             this.subepkx2.Size = new System.Drawing.Size(42, 34);
             this.subepkx2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.subepkx2.TabIndex = 19;
-            this.subepkx2.Enter += new System.EventHandler(this.pbBoxSlot_Enter);
-            this.subepkx2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pbBoxSlot_KeyDown);
-            this.subepkx2.Leave += new System.EventHandler(this.pbBoxSlot_Leave);
-            this.subepkx2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbBoxSlot_MouseDown);
-            this.subepkx2.MouseHover += new System.EventHandler(this.pbBoxSlot_Enter);
-            this.subepkx2.MouseLeave += new System.EventHandler(this.pbBoxSlot_Leave);
-            this.subepkx2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.pbBoxSlot_PreviewKeyDown);
+            this.subepkx2.TabStop = false;
             // 
             // subepkx3
             // 
@@ -4387,12 +4381,6 @@
             this.subepkx3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.subepkx3.TabIndex = 20;
             this.subepkx3.TabStop = false;
-            this.subepkx3.Enter += new System.EventHandler(this.pbBoxSlot_Enter);
-            this.subepkx3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pbBoxSlot_KeyDown);
-            this.subepkx3.Leave += new System.EventHandler(this.pbBoxSlot_Leave);
-            this.subepkx3.MouseHover += new System.EventHandler(this.pbBoxSlot_Enter);
-            this.subepkx3.MouseLeave += new System.EventHandler(this.pbBoxSlot_Leave);
-            this.subepkx3.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.pbBoxSlot_PreviewKeyDown);
             // 
             // Tab_SAV
             // 

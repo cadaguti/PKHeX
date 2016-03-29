@@ -188,6 +188,9 @@ namespace PKHeX
         private static string origintrack;
         private static string strEmptySlot = "Empty";
         private static string strBad = "Bad Egg";
+        private static string strPKEgg = "(Egg";
+        private static string strPKShiny = "(Shiny";
+        private static string strPKItem = "(Holding ";
         private readonly AccessiblePictureBox[] SlotPictureBoxes;
         private readonly PictureBox[] movePB, relearnPB;
         private readonly ToolTip Tip1 = new ToolTip(), Tip2 = new ToolTip(), Tip3 = new ToolTip(), NatureTip = new ToolTip();
@@ -2760,6 +2763,8 @@ namespace PKHeX
             else return;
 
             SlotPictureBoxes[slot].Image = null;
+            SlotPictureBoxes[slot].AccessibleName = strEmptySlot;
+            SlotPictureBoxes[slot].AccessibleDescription = "";
             SlotCries[slot] = "0";
             getSlotColor(slot, Properties.Resources.slotDel);
         }
@@ -2942,12 +2947,25 @@ namespace PKHeX
             sender = ((sender as ToolStripItem)?.Owner as ContextMenuStrip)?.SourceControl ?? sender as PictureBox;
             return Array.IndexOf(SlotPictureBoxes, sender);
         }
-        private void playCry(object sender)
+        private void playCry(int index)
         {
 if(Menu_PlayCries.Enabled) {
-            int index = getSlot(sender);
             cry.Play(SlotCries[index]);
             }
+        }
+        private void previousSlot(int index, int distance, int limit)
+        {
+            int newIndex = index - distance;
+            if (newIndex >= limit) SlotPictureBoxes[newIndex].Select();
+        }
+        private void nextSlot(int index, int distance, int limit)
+        {
+            int newIndex = index + distance;
+            if (newIndex <= limit) SlotPictureBoxes[newIndex].Select();
+        }
+        private void gotoSlot(int index)
+        {
+            if (index >= 0 && index < 49) SlotPictureBoxes[index].Select();
         }
         public void setPKXBoxes()
         {
@@ -3044,10 +3062,12 @@ if(Menu_PlayCries.Enabled) {
             pk = pk ?? preparepkx(false); // don't perform control loss click
 
             if (pb == dragout) mnuLQR.Enabled = pk.Species != 0; // Species
-            else SlotCries[cryIndex] = pk.Species.ToString();
-                pb.Image = pk.Sprite;
+            else SlotCries[cryIndex] = pk.AltForm > 0 ? pk.Species.ToString() + "_" + pk.AltForm.ToString() : pk.Species.ToString();
+            pb.Image = pk.Sprite;
             if (pb.BackColor == Color.Red)
                 pb.BackColor = Color.Transparent;
+            pb.AccessibleName = pk.Species == 0 ? strEmptySlot : Util.getStringList("species", curlanguage)[pk.Species];
+            pb.AccessibleDescription = getAccessibleData(pk);
         }
         private void getSlotFiller(int offset, PictureBox pb, int cryIndex)
         {
@@ -3073,8 +3093,20 @@ if(Menu_PlayCries.Enabled) {
             // Something stored in slot. Only display if species is valid.
             pb.Image = p.Species == 0 ? null : p.Sprite;
             pb.BackColor = Color.Transparent;
-            pb.AccessibleName = p.Species == 0 ? strEmptySlot : p.Nickname;
-            SlotCries[cryIndex] = p.Species.ToString() + "_" + p.AltForm.ToString();
+            pb.AccessibleName = p.Species == 0 ? strEmptySlot : Util.getStringList("species", curlanguage)[p.Species];
+            SlotCries[cryIndex] = p.AltForm>0 ? p.Species.ToString() + "_" + p.AltForm.ToString() : p.Species.ToString();
+            pb.AccessibleDescription = getAccessibleData(p);
+        }
+        private string getAccessibleData(PK6 p)
+        {
+            string data = "";
+            if (p.Species > 0)
+            {
+                if (p.IsEgg) data += strPKEgg;
+                if (p.IsShiny) data += strPKShiny;
+                if (p.HeldItem > 0) data += strPKItem + Util.getStringList("items", curlanguage)[p.HeldItem];
+            }
+                return data;
         }
         private void getSlotColor(int slot, Image color)
         {
@@ -3408,7 +3440,8 @@ if(Menu_PlayCries.Enabled) {
         // Drag & Drop within Box
         private void pbBoxSlot_Enter(object sender, System.EventArgs e)
         {
-if(Menu_PlayCries.Checked) playCry(sender);
+            int index = getSlot(sender);
+            if (Menu_PlayCries.Checked) playCry(index);
         }
         private void pbBoxSlot_Leave(object sender, System.EventArgs e)
         {
@@ -3473,7 +3506,7 @@ if(Menu_PlayCries.Checked) playCry(sender);
                         {
                             PK6 pk = Converter.ConvertPKMtoPK6(input);
                             SAV.setPK6Stored(pk, offset);
-                            getQuickFiller(SlotPictureBoxes[slot], pk);
+                            getQuickFiller(SlotPictureBoxes[slot], slot, pk);
                             getSlotColor(slot, Properties.Resources.slotSet);
                         }
                         catch
@@ -3540,10 +3573,103 @@ if(Menu_PlayCries.Checked) playCry(sender);
         }
         private void pbBoxSlot_KeyDown(object sender, KeyEventArgs e)
         {
+            int index = getSlot(sender);
+            int rowScroll=0, slotScroll=0, firstSlot=0, lastSlot=0;
+            if (index < 30)
+            {
+                rowScroll = 6;
+                slotScroll = 1;
+                lastSlot = 29;
+            }
+            else
+            {
+                if (index < 36)
+                {
+                    rowScroll = 2;
+                    slotScroll = 1;
+                    firstSlot = 30;
+                    lastSlot = 35;
+                }
+                else
+                {
+                    if (index < 42)
+                    {
+                        rowScroll = 2;
+                        slotScroll = 1;
+                        firstSlot = 36;
+                        lastSlot = 41;
+                    }
+                    else
+                    {
+                        if (index < 44)
+                        {
+                            rowScroll = 1;
+                            slotScroll = 1;
+                            firstSlot = 42;
+                            lastSlot = 43;
+                        }
+                        else
+                        {
+                            if (index < 45)
+                            {
+                                firstSlot = 44;
+                                lastSlot = 44;
+                            }
+                            else
+                            {
+                                if (index < 46)
+                                {
+                                    firstSlot = 45;
+                                    lastSlot = 45;
+                                }
+                            else
+                            {
+                                if (index < 49)
+                                {
+                                    slotScroll = 1;
+                                    firstSlot = 46;
+                                    lastSlot = 48;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             switch (e.KeyCode)
             {
                 case Keys.Space:
-                playCry(sender);
+                    playCry(index);
+                    break;
+                case Keys.Up:
+                    previousSlot(index, rowScroll, firstSlot);
+                    break;
+                case Keys.Down:
+                    nextSlot(index, rowScroll, lastSlot);
+                    break;
+                case Keys.Left:
+                    previousSlot(index, slotScroll, firstSlot);
+                    break;
+                case Keys.Right:
+                    nextSlot(index, slotScroll, lastSlot);
+                    break;
+                case Keys.Home:
+                    gotoSlot(firstSlot);
+                    break;
+                case Keys.End:
+                    gotoSlot(lastSlot);
+                    break;
+            }
+        }
+        private void pbBoxSlot_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Up:
+                case Keys.Down:
+                case Keys.Left:
+                case Keys.Right:
+                    e.IsInputKey = true;
                     break;
             }
         }

@@ -775,9 +775,7 @@ namespace PKHeX
             // Enable Secondary Tools
             GB_SAVtools.Enabled = B_JPEG.Enabled = true;
             Menu_ExportSAV.Enabled = B_VerifyCHK.Enabled = SAV.Exportable;
-
-            DaycareSlot = 0;
-
+            
             setBoxNames();   // Display the Box Names
             setPKXBoxes();   // Reload all of the PKX Windows
 
@@ -2933,7 +2931,7 @@ namespace PKHeX
             if (slot < 42) // Battle Box Slot
                 return SAV.BattleBox + (slot - 36) * PK6.SIZE_STORED;
             if (slot < 44) // Daycare
-                return SAV.DaycareSlot[DaycareSlot] + 8 + (slot - 42) * (PK6.SIZE_STORED + 8);
+                return SAV.DaycareSlot[SAV.DaycareIndex] + 8 + (slot - 42) * (PK6.SIZE_STORED + 8);
             if (slot < 45) // GTS
                 return SAV.GTS;
             if (slot < 46) // Fused
@@ -3000,7 +2998,7 @@ if(Menu_PlayCries.Enabled) {
 
                 for (int i = 0; i < 2; i++)
                 {
-                    getSlotFiller(SAV.DaycareSlot[DaycareSlot] + PK6.SIZE_STORED * i + 8 * (i + 1), SlotPictureBoxes[i + 42], i + 42);
+                    getSlotFiller(SAV.DaycareSlot[SAV.DaycareIndex] + PK6.SIZE_STORED * i + 8 * (i + 1), SlotPictureBoxes[i + 42], i + 42);
                     dctexta[i].Text = exp[i].ToString();
                     if (occ[i])   // If Occupied
                         dclabela[i].Text = $"{i + 1}: ✓";
@@ -3125,14 +3123,13 @@ if(Menu_PlayCries.Enabled) {
             setPKXBoxes();
         }
 
-        private int DaycareSlot;
         private void switchDaycare(object sender, EventArgs e)
         {
             if (!SAV.ORAS) return;
             if (DialogResult.Yes == Util.Prompt(MessageBoxButtons.YesNo, "Would you like to switch the view to the other Daycare?",
-                $"Currently viewing daycare {DaycareSlot + 1}."))
+                $"Currently viewing daycare {SAV.DaycareIndex + 1}."))
                 // If ORAS, alter the daycare offset via toggle.
-                DaycareSlot ^= 1;
+                SAV.DaycareIndex ^= 1;
 
             // Refresh Boxes
             setPKXBoxes();

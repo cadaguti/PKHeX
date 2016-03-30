@@ -200,6 +200,18 @@ namespace PKHeX
 
         #region //// MAIN MENU FUNCTIONS ////
         // Main Menu Strip UI Functions
+        private void form_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.F5:
+                    tabBoxMulti.Select();
+                    break;
+                case Keys.F6:
+                    tabMain.Select();
+                    break;
+            }
+        }
         private void mainMenuOpen(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog
@@ -2958,16 +2970,30 @@ if(Menu_PlayCries.Enabled) {
         private void previousSlot(int index, int distance, int limit)
         {
             int newIndex = index - distance;
-            if (newIndex >= limit) SlotPictureBoxes[newIndex].Select();
-        }
+            if (newIndex >= limit)
+            {
+                SlotPictureBoxes[index].TabStop = false;
+                SlotPictureBoxes[newIndex].Select();
+                SlotPictureBoxes[newIndex].TabStop = true;
+            }
+            }
         private void nextSlot(int index, int distance, int limit)
         {
             int newIndex = index + distance;
-            if (newIndex <= limit) SlotPictureBoxes[newIndex].Select();
+            if (newIndex <= limit)
+            {
+                SlotPictureBoxes[index].TabStop = false;
+                SlotPictureBoxes[newIndex].Select();
+                SlotPictureBoxes[newIndex].TabStop = true;
+            }
         }
         private void gotoSlot(int index)
         {
-            if (index >= 0 && index < 49) SlotPictureBoxes[index].Select();
+            if (index >= 0 && index < 49)
+            {
+                SlotPictureBoxes[index].Select();
+                SlotPictureBoxes[index].TabStop = true;
+            }
         }
         public void setPKXBoxes()
         {
@@ -3656,9 +3682,11 @@ if(Menu_PlayCries.Enabled) {
                     break;
                 case Keys.Home:
                     gotoSlot(firstSlot);
+if(index!=firstSlot&&SlotPictureBoxes[firstSlot].TabStop) SlotPictureBoxes[index].TabStop = false;
                     break;
                 case Keys.End:
                     gotoSlot(lastSlot);
+                    if (index != lastSlot && SlotPictureBoxes[lastSlot].TabStop) SlotPictureBoxes[index].TabStop = false;
                     break;
             }
         }

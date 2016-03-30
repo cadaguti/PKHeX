@@ -31,6 +31,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.form_KeyDown);
             this.tabMain = new System.Windows.Forms.TabControl();
             this.Tab_Main = new System.Windows.Forms.TabPage();
             this.CB_Language = new System.Windows.Forms.ComboBox();
